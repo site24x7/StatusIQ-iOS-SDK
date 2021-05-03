@@ -4,7 +4,7 @@ With mobiles and efficient business applications users can carry out all their t
 
 The StatusIQ iOS SDK (StatusIQFramework) is a free supplement of StatusIQ product. The perk is that now you can integrate the StatusIQ iOS SDK to your business's mobile iOS app and showcase the service's availability. We've created a Status iOS POD which contains StatusIQ iOS Framework. Enterprises who have been using the StatusIQ product can now  integrate the Status iOS POD in their business app to showcase their real-time  service status to clients.
 
- 
+
 
 Follow the steps to integrate the Status iOS POD into the business app:
 
@@ -12,15 +12,17 @@ Follow the steps to integrate the Status iOS POD into the business app:
 2. Add repository source URL and POD name with your respective target on the POD file. 
 	source 'https://github.com/site24x7/StatusIQ-iOS-Pod.git' 
            Add pod 'StatusIQ'
-
+				
+	<img width="366" alt="11d3fa93-f1c6-4fcf-bad8-4b8be62d0063" src="https://user-images.githubusercontent.com/6861082/116873005-93a0d500-ac34-11eb-9360-5c162366e325.png">
 3. After adding the  POD, navigate to StatusIQInfo.plist file and under configuration "Status page url", provide  your StatusIQ public page URL which you would like to showcase in the business app.  If you wish to list the Components you've on your StatusIQ page as your components in the business app, then in the .plist file set the 'Show Component status alone' as True. Then provide the Component of your preference in the field 'Component Name'.
-
+	
+	<img width="550" alt="8923e1f5-e860-4be4-b73c-024608e01871" src="https://user-images.githubusercontent.com/6861082/116873587-9223dc80-ac35-11eb-8b03-9c77be23b207.png">
 
 
 4. In your service's business app, you can add a new option by navigating to Settings  > add option 'Service Status'. 
 5. After adding the option, you can import the StatusIQ framework and implement the below code in respective places  where the option is used.
 6. Import the StatusIQ module :
-
+<img width="489" alt="45ceb268-807d-491a-a6aa-f7a7cd6bd232" src="https://user-images.githubusercontent.com/6861082/116873676-b384c880-ac35-11eb-9675-7af4414cd82c.png">
   
 
 
