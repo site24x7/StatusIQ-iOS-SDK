@@ -16,10 +16,10 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.homepage = "https://git.csez.zohocorpin.com/site24x7/statusiq-ios-sdk.git"
+  s.homepage = "https://github.com/site24x7/StatusIQ-iOS-SDK.git"
   s.description  = "description"
-  s.license      = { :type => "MIT", :text=> <<-LICENSE
-  MIT License
+  s.license      = { :type => "Apache", :text=> <<-LICENSE
+  Apache License
 
   Copyright (c) 2017 Zoho
 
@@ -42,10 +42,10 @@ Pod::Spec.new do |s|
   SOFTWARE
   LICENSE
 }
-  s.author       = { "nandhini guru" => "nandhini.guru@zohocorp.com" }
+  s.author       = { "nandhini guru" => "nandhini.guru@zohocorp.com","Muralikrishnan" => "muralikrishnan@zohocorp.com" }
   # s.platform     = :ios, '8.0'
   s.ios.deployment_target = '10.0'
-  # s.dependency 'ZAssistCore'#, '0.0.1'#, :git=> 'https://git.csez.zohocorpin.com/site24x7/statusiq-ios-sdk.git'
+  
 
 
   s.frameworks = 'UIKit','Foundation', 'CoreMedia'
@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
   s.resource_bundles = { 'StatusIQBundle' => ['native/StatusIQFramework/*.{plist,xib,storyboard,xcassets}']}
 
 
-  s.source       = { :git => "https://git.csez.zohocorpin.com/site24x7/statusiq-ios-sdk.git", :tag => s.version.to_s} # commit ID from Authkey support
+  s.source       = { :git => "https://github.com/site24x7/StatusIQ-iOS-SDK.git", :tag => s.version.to_s} # commit ID from Authkey support
 
 
   s.module_name  = 'StatusIQ'
