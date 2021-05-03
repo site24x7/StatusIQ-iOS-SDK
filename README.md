@@ -5,6 +5,10 @@ With mobiles and efficient business applications users can carry out all their t
 The StatusIQ iOS SDK (StatusIQFramework) is a free supplement of StatusIQ product. The perk is that now you can integrate the StatusIQ iOS SDK to your business's mobile iOS app and showcase the service's availability. We've created a Status iOS POD which contains StatusIQ iOS Framework. Enterprises who have been using the StatusIQ product can now  integrate the Status iOS POD in their business app to showcase their real-time  service status to clients.
 
 
+<img width="325" alt="Screenshot 2021-05-03 at 5 38 14 PM" src="https://user-images.githubusercontent.com/6861082/116874232-9a304c00-ac36-11eb-80a7-fe509bb785f0.png">      		<img width="315" alt="Screenshot 2021-05-03 at 5 38 34 PM" src="https://user-images.githubusercontent.com/6861082/116874296-ba600b00-ac36-11eb-8e5f-a0ed6897c85a.png">
+
+
+
 
 Follow the steps to integrate the Status iOS POD into the business app:
 
