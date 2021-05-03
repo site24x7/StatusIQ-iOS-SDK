@@ -1,3 +1,36 @@
+
+Skip to content
+Pull requests
+Issues
+Marketplace
+Explore
+@site24x7
+site24x7 /
+StatusIQ-iOS-Pod
+
+1
+0
+
+    0
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+
+    Settings
+
+StatusIQ-iOS-Pod/1.0/StatusIQ.podspec /
+@site24x7
+site24x7 Update StatusIQ.podspec
+Latest commit 9c580a4 1 hour ago
+History
+1 contributor
+54 lines (39 sloc) 2.06 KB
 Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -11,42 +44,27 @@ Pod::Spec.new do |s|
   s.version      = "1.0"
   s.summary      = "StatusIQ"
 
-  # This description is used to generate tags and improve search results.
-  #   * Think: What does it do? Why did you write it? What is the focus?
-  #   * Try to keep it short, snappy and to the point.
-  #   * Write the description between the DESC delimiters below.
-  #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.homepage = "https://github.com/site24x7/StatusIQ-iOS-SDK.git"
   s.description  = "description"
   s.license      = { :type => "Apache", :text=> <<-LICENSE
   Apache License
-
-  Copyright (c) 2017 Zoho
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in allcd 
-  copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-  SOFTWARE
+  Copyright (c) 2021, ZOHO CORPORATION PRIVATE LIMITED
+  All rights reserved.
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
   LICENSE
-}
-  s.author       = { "nandhini guru" => "nandhini.guru@zohocorp.com","Muralikrishnan" => "muralikrishnan@zohocorp.com" }
-  # s.platform     = :ios, '8.0'
-  s.ios.deployment_target = '10.0'
-  
 
+}
+  #support email-id -  support@site24x7.com
+  s.author       = { "nandhini guru" => "nandhini.guru@zohocorp.com" ,"Muralikrishnan" => "muralikrishnan@zohocorp.com"}
+  s.ios.deployment_target = '10.0'
 
   s.frameworks = 'UIKit','Foundation', 'CoreMedia'
     
@@ -59,8 +77,22 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/site24x7/StatusIQ-iOS-SDK.git", :tag => s.version.to_s} # commit ID from Authkey support
 
-
   s.module_name  = 'StatusIQ'
   s.requires_arc = true
 end
 
+    © 2021 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
+Loading complete
