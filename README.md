@@ -14,8 +14,7 @@ Follow the steps to integrate the Status iOS POD into the business app:
 
 1. Open your business app in the XCode. 
 2. Add repository source URL and POD name with your respective target on the POD file. 
-	source 'https://github.com/site24x7/StatusIQ-iOS-Pod.git' 
-           Add pod 'StatusIQ'
+	pod "StatusIQ", :git => 'https://github.com/site24x7/StatusIQ-iOS-SDK.git'
 				
 	<img width="366" alt="11d3fa93-f1c6-4fcf-bad8-4b8be62d0063" src="https://user-images.githubusercontent.com/6861082/116873005-93a0d500-ac34-11eb-9360-5c162366e325.png">
 3. After adding the  POD, navigate to StatusIQInfo.plist file and under configuration "Status page url", provide  your StatusIQ public page URL which you would like to showcase in the business app.  If you wish to list the Components you've on your StatusIQ page as your components in the business app, then in the .plist file set the 'Show Component status alone' as True. Then provide the Component of your preference in the field 'Component Name'.
