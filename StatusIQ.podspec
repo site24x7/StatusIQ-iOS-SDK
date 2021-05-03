@@ -1,36 +1,4 @@
 
-Skip to content
-Pull requests
-Issues
-Marketplace
-Explore
-@site24x7
-site24x7 /
-StatusIQ-iOS-Pod
-
-1
-0
-
-    0
-
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-
-    Settings
-
-StatusIQ-iOS-Pod/1.0/StatusIQ.podspec /
-@site24x7
-site24x7 Update StatusIQ.podspec
-Latest commit 9c580a4 1 hour ago
-History
-1 contributor
-54 lines (39 sloc) 2.06 KB
 Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -80,19 +48,3 @@ Pod::Spec.new do |s|
   s.module_name  = 'StatusIQ'
   s.requires_arc = true
 end
-
-    © 2021 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Docs
-
-    Contact GitHub
-    Pricing
-    API
-    Training
-    Blog
-    About
-
-Loading complete
