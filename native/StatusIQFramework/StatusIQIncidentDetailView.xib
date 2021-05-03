@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StatusIQIncidentDetailView" customModule="StatusIQ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="399"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incident Start Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRq-Ys-drX">
+                    <rect key="frame" x="20" y="48.5" width="118" height="15"/>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Affected Components" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lX0-xy-P3E">
+                    <rect key="frame" x="20" y="113.5" width="129.5" height="15"/>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incident Status Updates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRC-lf-Vm6">
+                    <rect key="frame" x="20" y="179.5" width="146" height="15"/>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ryp-eH-XF0">
+                    <rect key="frame" x="20" y="68.5" width="34.5" height="16"/>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czz-nY-0lo">
+                    <rect key="frame" x="20" y="134.5" width="34.5" height="16"/>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HME-ck-U0R">
+                    <rect key="frame" x="0.0" y="214.5" width="454" height="184.5"/>
+                    <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="IncidentTitleLabel" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpW-Xv-LeW">
+                    <rect key="frame" x="20" y="0.0" width="42.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.39215686274509803" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ryp-eH-XF0" secondAttribute="trailing" constant="10" id="0ZI-Nq-btJ"/>
+                <constraint firstItem="HME-ck-U0R" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9rT-bc-4ug"/>
+                <constraint firstItem="ZRC-lf-Vm6" firstAttribute="leading" secondItem="TpW-Xv-LeW" secondAttribute="leading" id="CiT-6A-y1t"/>
+                <constraint firstItem="lX0-xy-P3E" firstAttribute="leading" secondItem="TpW-Xv-LeW" secondAttribute="leading" id="Fb1-6Y-far"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TpW-Xv-LeW" secondAttribute="trailing" constant="10" id="OzE-Ka-hc8"/>
+                <constraint firstItem="NRq-Ys-drX" firstAttribute="top" secondItem="TpW-Xv-LeW" secondAttribute="bottom" constant="29" id="P5n-g1-NCu"/>
+                <constraint firstItem="Ryp-eH-XF0" firstAttribute="top" secondItem="NRq-Ys-drX" secondAttribute="bottom" constant="5" id="PyZ-4c-RFq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lX0-xy-P3E" secondAttribute="trailing" constant="10" id="UmW-01-DGv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Czz-nY-0lo" secondAttribute="trailing" constant="10" id="ZoN-WN-Tgk"/>
+                <constraint firstItem="Czz-nY-0lo" firstAttribute="top" secondItem="lX0-xy-P3E" secondAttribute="bottom" constant="6" id="b8G-iS-rN0"/>
+                <constraint firstItem="Czz-nY-0lo" firstAttribute="leading" secondItem="TpW-Xv-LeW" secondAttribute="leading" id="cAb-mQ-hwp"/>
+                <constraint firstItem="TpW-Xv-LeW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cYf-Cb-QIO"/>
+                <constraint firstItem="Ryp-eH-XF0" firstAttribute="leading" secondItem="TpW-Xv-LeW" secondAttribute="leading" id="kVA-5j-bbQ"/>
+                <constraint firstItem="HME-ck-U0R" firstAttribute="top" secondItem="ZRC-lf-Vm6" secondAttribute="bottom" constant="20" id="ktq-aF-8oI"/>
+                <constraint firstItem="TpW-Xv-LeW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="m0i-Iw-Jle"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NRq-Ys-drX" secondAttribute="trailing" constant="10" id="oXj-4t-5It"/>
+                <constraint firstItem="lX0-xy-P3E" firstAttribute="top" secondItem="Ryp-eH-XF0" secondAttribute="bottom" constant="29" id="tDI-Bp-TlD"/>
+                <constraint firstItem="NRq-Ys-drX" firstAttribute="leading" secondItem="TpW-Xv-LeW" secondAttribute="leading" id="tdg-9n-aHz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZRC-lf-Vm6" secondAttribute="trailing" constant="10" id="vGc-ZM-qoN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HME-ck-U0R" secondAttribute="trailing" id="whx-8m-geZ"/>
+                <constraint firstItem="ZRC-lf-Vm6" firstAttribute="top" secondItem="Czz-nY-0lo" secondAttribute="bottom" constant="29" id="wst-ZW-oKg"/>
+                <constraint firstItem="HME-ck-U0R" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="xBU-AT-8pX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="IncidentTitle" destination="TpW-Xv-LeW" id="f77-a9-HfX"/>
+                <outlet property="affectedComponentsTitle" destination="lX0-xy-P3E" id="94v-U0-3XK"/>
+                <outlet property="components" destination="Czz-nY-0lo" id="h74-qe-5F2"/>
+                <outlet property="incidentStartTimeTitle" destination="NRq-Ys-drX" id="ah3-06-1K0"/>
+                <outlet property="incidentStatusUpdatesTitle" destination="ZRC-lf-Vm6" id="OBZ-hj-Enj"/>
+                <outlet property="time" destination="Ryp-eH-XF0" id="Are-3v-mOa"/>
+                <outlet property="updateIncidentStackView" destination="HME-ck-U0R" id="k0v-kC-pgI"/>
+            </connections>
+            <point key="canvasLocation" x="-7.2463768115942031" y="67.96875"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

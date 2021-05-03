@@ -1,0 +1,6 @@
+framework module StatusIQ {
+  umbrella header "StatusIQ-umbrella.h"
+
+  export *
+  module * { export * }
+}

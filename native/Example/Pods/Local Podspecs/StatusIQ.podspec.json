@@ -1,0 +1,39 @@
+{
+  "name": "StatusIQ",
+  "version": "1.0",
+  "summary": "StatusIQ",
+  "homepage": "https://git.csez.zohocorpin.com/site24x7/statusiq-ios-sdk.git",
+  "description": "description",
+  "license": {
+    "type": "MIT",
+    "text": "  MIT License\n\n  Copyright (c) 2017 Zoho\n\n  Permission is hereby granted, free of charge, to any person obtaining a copy\n  of this software and associated documentation files (the \"Software\"), to deal\n  in the Software without restriction, including without limitation the rights\n  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n  copies of the Software, and to permit persons to whom the Software is\n  furnished to do so, subject to the following conditions:\n\n  The above copyright notice and this permission notice shall be included in allcd \n  copies or substantial portions of the Software.\n\n  THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n  SOFTWARE\n"
+  },
+  "authors": {
+    "nandhini guru": "nandhini.guru@zohocorp.com"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "CoreMedia"
+  ],
+  "source_files": [
+    "native/StatusIQFramework/*{swift}"
+  ],
+  "resources": [
+    "native/StatusIQFramework/*{xcassets,storyboard,xib}"
+  ],
+  "resource_bundles": {
+    "StatusIQBundle": [
+      "native/StatusIQFramework/*.{plist,xib,storyboard,xcassets}"
+    ]
+  },
+  "source": {
+    "git": "https://git.csez.zohocorpin.com/site24x7/statusiq-ios-sdk.git",
+    "tag": "1.0"
+  },
+  "module_name": "StatusIQ",
+  "requires_arc": true
+}

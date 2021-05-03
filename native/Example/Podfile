@@ -1,0 +1,8 @@
+platform :ios, '10.0'
+
+use_frameworks!
+
+target 'StatusIQ_Example' do
+  pod 'StatusIQ', :path => '../../'
+end
+

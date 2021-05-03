@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		527720182518D00D005609E4 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527720172518D00D005609E4 /* StoryViewController.swift */; };
+		52FE189124C0C5AF00EE5075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE189024C0C5AF00EE5075 /* AppDelegate.swift */; };
+		52FE189324C0C5AF00EE5075 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE189224C0C5AF00EE5075 /* ViewController.swift */; };
+		52FE189624C0C5AF00EE5075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FE189424C0C5AF00EE5075 /* Main.storyboard */; };
+		52FE189824C0C5AF00EE5075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FE189724C0C5AF00EE5075 /* Assets.xcassets */; };
+		52FE189B24C0C5AF00EE5075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FE189924C0C5AF00EE5075 /* LaunchScreen.storyboard */; };
+		9A7955C326264F35E6C00974 /* Pods_StatusIQ_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7416CEC8C7D4191D8AC1DB /* Pods_StatusIQ_Example.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52FE18A224C0C5AF00EE5075 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52FE188524C0C5AF00EE5075 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52FE188C24C0C5AF00EE5075;
+			remoteInfo = StatusIQ;
+		};
+		52FE18AD24C0C5AF00EE5075 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52FE188524C0C5AF00EE5075 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52FE188C24C0C5AF00EE5075;
+			remoteInfo = StatusIQ;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52FE190324C3691900EE5075 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1ABEFBE34E4D60EAF45AB515 /* Pods-StatusIQ_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusIQ_Example.release.xcconfig"; path = "Target Support Files/Pods-StatusIQ_Example/Pods-StatusIQ_Example.release.xcconfig"; sourceTree = "<group>"; };
+		527720172518D00D005609E4 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		52FE188D24C0C5AF00EE5075 /* StatusIQ_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatusIQ_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FE189024C0C5AF00EE5075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52FE189224C0C5AF00EE5075 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52FE189524C0C5AF00EE5075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52FE189724C0C5AF00EE5075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52FE189A24C0C5AF00EE5075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52FE189C24C0C5AF00EE5075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FE18A124C0C5AF00EE5075 /* StatusIQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatusIQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FE18AC24C0C5AF00EE5075 /* StatusIQUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatusIQUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6075D2B319C66985263DCF39 /* Pods-StatusIQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusIQ.release.xcconfig"; path = "Target Support Files/Pods-StatusIQ/Pods-StatusIQ.release.xcconfig"; sourceTree = "<group>"; };
+		7A7416CEC8C7D4191D8AC1DB /* Pods_StatusIQ_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StatusIQ_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF950AF664BE79E556C8E310 /* Pods-StatusIQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusIQ.debug.xcconfig"; path = "Target Support Files/Pods-StatusIQ/Pods-StatusIQ.debug.xcconfig"; sourceTree = "<group>"; };
+		C52FE6627DC653EB0F7AA432 /* Pods-StatusIQ_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusIQ_Example.debug.xcconfig"; path = "Target Support Files/Pods-StatusIQ_Example/Pods-StatusIQ_Example.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52FE188A24C0C5AF00EE5075 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A7955C326264F35E6C00974 /* Pods_StatusIQ_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FE189E24C0C5AF00EE5075 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FE18A924C0C5AF00EE5075 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52FE188424C0C5AF00EE5075 = {
+			isa = PBXGroup;
+			children = (
+				52FE188F24C0C5AF00EE5075 /* Example_for_StatusIQ */,
+				52FE188E24C0C5AF00EE5075 /* Products */,
+				59FE56707420F3B634FD075B /* Pods */,
+				C24CB111F160BBBCC30772BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52FE188E24C0C5AF00EE5075 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52FE188D24C0C5AF00EE5075 /* StatusIQ_Example.app */,
+				52FE18A124C0C5AF00EE5075 /* StatusIQTests.xctest */,
+				52FE18AC24C0C5AF00EE5075 /* StatusIQUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52FE188F24C0C5AF00EE5075 /* Example_for_StatusIQ */ = {
+			isa = PBXGroup;
+			children = (
+				527720172518D00D005609E4 /* StoryViewController.swift */,
+				52FE189024C0C5AF00EE5075 /* AppDelegate.swift */,
+				52FE189224C0C5AF00EE5075 /* ViewController.swift */,
+				52FE189424C0C5AF00EE5075 /* Main.storyboard */,
+				52FE189724C0C5AF00EE5075 /* Assets.xcassets */,
+				52FE189924C0C5AF00EE5075 /* LaunchScreen.storyboard */,
+				52FE189C24C0C5AF00EE5075 /* Info.plist */,
+			);
+			path = Example_for_StatusIQ;
+			sourceTree = "<group>";
+		};
+		59FE56707420F3B634FD075B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF950AF664BE79E556C8E310 /* Pods-StatusIQ.debug.xcconfig */,
+				6075D2B319C66985263DCF39 /* Pods-StatusIQ.release.xcconfig */,
+				C52FE6627DC653EB0F7AA432 /* Pods-StatusIQ_Example.debug.xcconfig */,
+				1ABEFBE34E4D60EAF45AB515 /* Pods-StatusIQ_Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C24CB111F160BBBCC30772BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A7416CEC8C7D4191D8AC1DB /* Pods_StatusIQ_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52FE188C24C0C5AF00EE5075 /* StatusIQ_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FE18B524C0C5AF00EE5075 /* Build configuration list for PBXNativeTarget "StatusIQ_Example" */;
+			buildPhases = (
+				DC758B99CC2E77E6E37F8779 /* [CP] Check Pods Manifest.lock */,
+				52FE188924C0C5AF00EE5075 /* Sources */,
+				52FE188A24C0C5AF00EE5075 /* Frameworks */,
+				52FE188B24C0C5AF00EE5075 /* Resources */,
+				52FE190324C3691900EE5075 /* Embed Frameworks */,
+				A44C3D24DC13952C75CC8376 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StatusIQ_Example;
+			productName = StatusIQ;
+			productReference = 52FE188D24C0C5AF00EE5075 /* StatusIQ_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52FE18A024C0C5AF00EE5075 /* StatusIQTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FE18B824C0C5AF00EE5075 /* Build configuration list for PBXNativeTarget "StatusIQTests" */;
+			buildPhases = (
+				52FE189D24C0C5AF00EE5075 /* Sources */,
+				52FE189E24C0C5AF00EE5075 /* Frameworks */,
+				52FE189F24C0C5AF00EE5075 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52FE18A324C0C5AF00EE5075 /* PBXTargetDependency */,
+			);
+			name = StatusIQTests;
+			productName = StatusIQTests;
+			productReference = 52FE18A124C0C5AF00EE5075 /* StatusIQTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52FE18AB24C0C5AF00EE5075 /* StatusIQUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FE18BB24C0C5AF00EE5075 /* Build configuration list for PBXNativeTarget "StatusIQUITests" */;
+			buildPhases = (
+				52FE18A824C0C5AF00EE5075 /* Sources */,
+				52FE18A924C0C5AF00EE5075 /* Frameworks */,
+				52FE18AA24C0C5AF00EE5075 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52FE18AE24C0C5AF00EE5075 /* PBXTargetDependency */,
+			);
+			name = StatusIQUITests;
+			productName = StatusIQUITests;
+			productReference = 52FE18AC24C0C5AF00EE5075 /* StatusIQUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52FE188524C0C5AF00EE5075 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					52FE188C24C0C5AF00EE5075 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					52FE18A024C0C5AF00EE5075 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 52FE188C24C0C5AF00EE5075;
+					};
+					52FE18AB24C0C5AF00EE5075 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 52FE188C24C0C5AF00EE5075;
+					};
+				};
+			};
+			buildConfigurationList = 52FE188824C0C5AF00EE5075 /* Build configuration list for PBXProject "StatusIQ" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52FE188424C0C5AF00EE5075;
+			productRefGroup = 52FE188E24C0C5AF00EE5075 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52FE188C24C0C5AF00EE5075 /* StatusIQ_Example */,
+				52FE18A024C0C5AF00EE5075 /* StatusIQTests */,
+				52FE18AB24C0C5AF00EE5075 /* StatusIQUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52FE188B24C0C5AF00EE5075 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FE189B24C0C5AF00EE5075 /* LaunchScreen.storyboard in Resources */,
+				52FE189824C0C5AF00EE5075 /* Assets.xcassets in Resources */,
+				52FE189624C0C5AF00EE5075 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FE189F24C0C5AF00EE5075 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FE18AA24C0C5AF00EE5075 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A44C3D24DC13952C75CC8376 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StatusIQ_Example/Pods-StatusIQ_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/StatusIQ/StatusIQ.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StatusIQ.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StatusIQ_Example/Pods-StatusIQ_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC758B99CC2E77E6E37F8779 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StatusIQ_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52FE188924C0C5AF00EE5075 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FE189324C0C5AF00EE5075 /* ViewController.swift in Sources */,
+				527720182518D00D005609E4 /* StoryViewController.swift in Sources */,
+				52FE189124C0C5AF00EE5075 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FE189D24C0C5AF00EE5075 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FE18A824C0C5AF00EE5075 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52FE18A324C0C5AF00EE5075 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52FE188C24C0C5AF00EE5075 /* StatusIQ_Example */;
+			targetProxy = 52FE18A224C0C5AF00EE5075 /* PBXContainerItemProxy */;
+		};
+		52FE18AE24C0C5AF00EE5075 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52FE188C24C0C5AF00EE5075 /* StatusIQ_Example */;
+			targetProxy = 52FE18AD24C0C5AF00EE5075 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52FE189424C0C5AF00EE5075 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52FE189524C0C5AF00EE5075 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52FE189924C0C5AF00EE5075 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52FE189A24C0C5AF00EE5075 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52FE18B324C0C5AF00EE5075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		52FE18B424C0C5AF00EE5075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52FE18B624C0C5AF00EE5075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C52FE6627DC653EB0F7AA432 /* Pods-StatusIQ_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3QZ6UJB6QX;
+				INFOPLIST_FILE = Example_for_StatusIQ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.site24x7.inhouse.statusIQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3297b7fa-d435-4396-b51b-c3c288dddc27";
+				PROVISIONING_PROFILE_SPECIFIER = "zoho site24x7 statusIQ inhouse profile";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52FE18B724C0C5AF00EE5075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ABEFBE34E4D60EAF45AB515 /* Pods-StatusIQ_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Example_for_StatusIQ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.site24x7.inhouse.statusIQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52FE18B924C0C5AF00EE5075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StatusIQTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = S247.StatusIQTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StatusIQ.app/StatusIQ";
+			};
+			name = Debug;
+		};
+		52FE18BA24C0C5AF00EE5075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StatusIQTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = S247.StatusIQTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StatusIQ.app/StatusIQ";
+			};
+			name = Release;
+		};
+		52FE18BC24C0C5AF00EE5075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StatusIQUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = S247.StatusIQUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StatusIQ;
+			};
+			name = Debug;
+		};
+		52FE18BD24C0C5AF00EE5075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StatusIQUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = S247.StatusIQUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StatusIQ;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52FE188824C0C5AF00EE5075 /* Build configuration list for PBXProject "StatusIQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FE18B324C0C5AF00EE5075 /* Debug */,
+				52FE18B424C0C5AF00EE5075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52FE18B524C0C5AF00EE5075 /* Build configuration list for PBXNativeTarget "StatusIQ_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FE18B624C0C5AF00EE5075 /* Debug */,
+				52FE18B724C0C5AF00EE5075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52FE18B824C0C5AF00EE5075 /* Build configuration list for PBXNativeTarget "StatusIQTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FE18B924C0C5AF00EE5075 /* Debug */,
+				52FE18BA24C0C5AF00EE5075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52FE18BB24C0C5AF00EE5075 /* Build configuration list for PBXNativeTarget "StatusIQUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FE18BC24C0C5AF00EE5075 /* Debug */,
+				52FE18BD24C0C5AF00EE5075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52FE188524C0C5AF00EE5075 /* Project object */;
+}
