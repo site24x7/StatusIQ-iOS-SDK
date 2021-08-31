@@ -20,7 +20,7 @@ Method argument to pass the desired UIColor value.
 	
 Use this method to change the desired font style which is already used in your app. Method argument to pass the font name is String type. 
 #### StatusIQCustomization.setFontName(fontName : <String>) <br><br>
-	Example: if you customize the StatusIQ framework by below color settings,
+	Example: if you customize the StatusIQ framework by below color settings, the SDK screens will be looks as below images.
 	Font name=Trebuchet MS 
 	Background color code=#f2f1ed 
 	Navigation bar color code = #faf0c8 
