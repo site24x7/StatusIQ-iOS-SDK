@@ -26,7 +26,7 @@ Use this method to change the desired font style which is already used in your a
 	Navigation bar color code = #faf0c8 
 
 <img width="300" alt="service-status-operational" src="https://user-images.githubusercontent.com/6861082/131501825-3b3607f2-a624-4b8b-958d-a77d85e089a4.png"> &nbsp;&nbsp;&nbsp;    <img width="300" alt="service-status-ist" src="https://user-images.githubusercontent.com/6861082/131502087-54732c86-a412-4569-858c-09f66f90144c.png">&nbsp;&nbsp;&nbsp;
-	<img width="300" alt="service-status-image-1" src="https://user-images.githubusercontent.com/6861082/131502426-e5a70e4e-67c5-4f6f-93a7-375be923c52d.png">&nbsp;&nbsp;&nbsp;<br><img width="300" alt="incident-history" src="https://user-images.githubusercontent.com/6861082/131502538-2dbda786-0876-4c07-a843-d3a0b1d90c04.png">&nbsp;&nbsp;&nbsp;
+	<img width="300" alt="service-status-image-1" src="https://user-images.githubusercontent.com/6861082/131502426-e5a70e4e-67c5-4f6f-93a7-375be923c52d.png">&nbsp;&nbsp;&nbsp;<img width="300" alt="incident-history" src="https://user-images.githubusercontent.com/6861082/131502538-2dbda786-0876-4c07-a843-d3a0b1d90c04.png">&nbsp;&nbsp;&nbsp; <br>
 	<img width="300" alt="incident-history-2021" src="https://user-images.githubusercontent.com/6861082/131502751-d49c1465-7b8c-4bf2-9f90-dacc43a2b8fd.png">
 
 
