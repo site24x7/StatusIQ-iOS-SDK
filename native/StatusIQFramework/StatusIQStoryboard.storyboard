@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dHX-Xo-EPZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--Navigation Controller-->
         <scene sceneID="YYd-16-Uhq">
             <objects>
-                <navigationController id="OcX-3t-hTC" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="StatusIQIdentifier" id="OcX-3t-hTC" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WQj-NE-OvR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -27,7 +27,7 @@
         <!--StatusIQ View Controller-->
         <scene sceneID="DfI-u8-mSV">
             <objects>
-                <tableViewController storyboardIdentifier="StatusIQPageIdentifier" id="jLG-ZC-WA5" customClass="StatusIQViewController" customModule="StatusIQ" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="jLG-ZC-WA5" customClass="StatusIQViewController" customModule="StatusIQ" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lez-tt-3f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,7 +35,7 @@
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ComponentNameIdentifier" rowHeight="69" id="WzZ-Kj-rJR" customClass="ComponentNameTableViewCell" customModule="StatusIQ" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="69"/>
+                                <rect key="frame" x="0.0" y="44.5" width="375" height="69"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WzZ-Kj-rJR" id="c6t-2P-nDE">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
@@ -90,7 +90,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ComponentHistoryIdentifier" rowHeight="513" id="pHI-gd-D1K" customClass="ComponentHistoryTableViewCell" customModule="StatusIQ" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="97" width="375" height="513"/>
+                                <rect key="frame" x="0.0" y="113.5" width="375" height="513"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pHI-gd-D1K" id="Ayl-3J-G2R">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="513"/>
@@ -256,7 +256,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="StatusInfoIdentifier" rowHeight="216" id="j8I-jg-mhp" customClass="StatusInfoTableViewCell" customModule="StatusIQ" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="610" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="626.5" width="375" height="216"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j8I-jg-mhp" id="Qkh-ua-PYv">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
@@ -423,24 +423,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="status" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VA-5J-XXD">
-                                <rect key="frame" x="10" y="56" width="355" height="35"/>
-                                <color key="backgroundColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="ewY-Dp-UCu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="componentsTableView" alwaysBounceVertical="YES" indicatorStyle="black" minimumZoomScale="5" maximumZoomScale="7" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WAF-fy-HQg" customClass="ContentSizeTableView" customModule="StatusIQ">
-                                <rect key="frame" x="0.0" y="99" width="375" height="563"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="662"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ActiveIncidentCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActiveIncidentCell" rowHeight="510" id="zTt-ix-vMv" customClass="StatusIQActiveIncidentTableViewCell" customModule="StatusIQ">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="510"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="375" height="510"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zTt-ix-vMv" id="S88-Tq-m4V">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="510"/>
@@ -583,7 +573,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="componentStatusCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="componentStatusCell" rowHeight="108" id="IpZ-pI-uV2" customClass="StatusIQComponentTableViewCell" customModule="StatusIQ">
-                                        <rect key="frame" x="0.0" y="538" width="375" height="108"/>
+                                        <rect key="frame" x="0.0" y="554.5" width="375" height="108"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IpZ-pI-uV2" id="ny2-7M-aK4">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="108"/>
@@ -703,13 +693,9 @@
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="aIF-bJ-eru" firstAttribute="leading" secondItem="WAF-fy-HQg" secondAttribute="leading" id="2dN-6O-vEd"/>
-                            <constraint firstItem="7VA-5J-XXD" firstAttribute="trailing" secondItem="aIF-bJ-eru" secondAttribute="trailing" constant="-10" id="5g3-kq-Jgp"/>
-                            <constraint firstItem="WAF-fy-HQg" firstAttribute="top" secondItem="aIF-bJ-eru" secondAttribute="top" priority="750" constant="10" id="Elx-LG-1kz"/>
-                            <constraint firstItem="7VA-5J-XXD" firstAttribute="top" secondItem="aIF-bJ-eru" secondAttribute="top" constant="12" id="QhY-Jm-Nj9"/>
+                            <constraint firstItem="WAF-fy-HQg" firstAttribute="top" secondItem="nyH-Yw-2e5" secondAttribute="top" id="Elx-LG-1kz"/>
                             <constraint firstItem="aIF-bJ-eru" firstAttribute="trailing" secondItem="WAF-fy-HQg" secondAttribute="trailing" id="Vxy-3D-as3"/>
-                            <constraint firstItem="7VA-5J-XXD" firstAttribute="leading" secondItem="nyH-Yw-2e5" secondAttribute="leading" constant="10" id="bgg-Zl-q3H"/>
                             <constraint firstAttribute="bottom" secondItem="WAF-fy-HQg" secondAttribute="bottom" priority="750" constant="5" id="iCU-qp-sOO"/>
-                            <constraint firstItem="WAF-fy-HQg" firstAttribute="top" secondItem="7VA-5J-XXD" secondAttribute="bottom" constant="8" symbolic="YES" id="kxo-PU-Cq4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TYf-4G-3P3">
@@ -729,12 +715,11 @@
                     </navigationItem>
                     <connections>
                         <outlet property="componentTableView" destination="WAF-fy-HQg" id="WN1-JF-6tb"/>
-                        <outlet property="statusLabel" destination="7VA-5J-XXD" id="Ojh-i5-JtV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gTf-TY-Gcy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3741.5999999999999" y="80.50974512743629"/>
+            <point key="canvasLocation" x="3754" y="70"/>
         </scene>
         <!--Incident History-->
         <scene sceneID="PwT-62-Saw">
@@ -750,7 +735,7 @@
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="IncidentHistoryDetailCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IncidentHistoryOverallDetailCell" rowHeight="550" id="yGQ-lp-CDx" customClass="StatusIQIncidentHistoryOverallDetailCell" customModule="StatusIQ" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="550"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="375" height="550"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yGQ-lp-CDx" id="OsT-jF-Tna">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="550"/>
@@ -847,7 +832,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1A-Na-lWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5125.6000000000004" y="91.304347826086968"/>
+            <point key="canvasLocation" x="5185" y="70"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xT3-59-BO2">
@@ -865,12 +850,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ffh-Ht-lEO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4444" y="81"/>
+            <point key="canvasLocation" x="4470" y="70"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="J61-eq-Oyz">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dHX-Xo-EPZ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="StatusIQPageIdentifier" automaticallyAdjustsScrollViewInsets="NO" id="dHX-Xo-EPZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pwk-ty-DUx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

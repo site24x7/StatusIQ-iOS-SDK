@@ -13,7 +13,6 @@
 		52FE189624C0C5AF00EE5075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FE189424C0C5AF00EE5075 /* Main.storyboard */; };
 		52FE189824C0C5AF00EE5075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FE189724C0C5AF00EE5075 /* Assets.xcassets */; };
 		52FE189B24C0C5AF00EE5075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FE189924C0C5AF00EE5075 /* LaunchScreen.storyboard */; };
-		9A7955C326264F35E6C00974 /* Pods_StatusIQ_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7416CEC8C7D4191D8AC1DB /* Pods_StatusIQ_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +46,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1ABEFBE34E4D60EAF45AB515 /* Pods-StatusIQ_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusIQ_Example.release.xcconfig"; path = "Target Support Files/Pods-StatusIQ_Example/Pods-StatusIQ_Example.release.xcconfig"; sourceTree = "<group>"; };
 		527720172518D00D005609E4 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		52FE188D24C0C5AF00EE5075 /* StatusIQ_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatusIQ_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FE189024C0C5AF00EE5075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,10 +56,6 @@
 		52FE189C24C0C5AF00EE5075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52FE18A124C0C5AF00EE5075 /* StatusIQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatusIQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FE18AC24C0C5AF00EE5075 /* StatusIQUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatusIQUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6075D2B319C66985263DCF39 /* Pods-StatusIQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusIQ.release.xcconfig"; path = "Target Support Files/Pods-StatusIQ/Pods-StatusIQ.release.xcconfig"; sourceTree = "<group>"; };
-		7A7416CEC8C7D4191D8AC1DB /* Pods_StatusIQ_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StatusIQ_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF950AF664BE79E556C8E310 /* Pods-StatusIQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusIQ.debug.xcconfig"; path = "Target Support Files/Pods-StatusIQ/Pods-StatusIQ.debug.xcconfig"; sourceTree = "<group>"; };
-		C52FE6627DC653EB0F7AA432 /* Pods-StatusIQ_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusIQ_Example.debug.xcconfig"; path = "Target Support Files/Pods-StatusIQ_Example/Pods-StatusIQ_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A7955C326264F35E6C00974 /* Pods_StatusIQ_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +89,6 @@
 				52FE188F24C0C5AF00EE5075 /* Example_for_StatusIQ */,
 				52FE188E24C0C5AF00EE5075 /* Products */,
 				59FE56707420F3B634FD075B /* Pods */,
-				C24CB111F160BBBCC30772BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,20 +119,8 @@
 		59FE56707420F3B634FD075B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AF950AF664BE79E556C8E310 /* Pods-StatusIQ.debug.xcconfig */,
-				6075D2B319C66985263DCF39 /* Pods-StatusIQ.release.xcconfig */,
-				C52FE6627DC653EB0F7AA432 /* Pods-StatusIQ_Example.debug.xcconfig */,
-				1ABEFBE34E4D60EAF45AB515 /* Pods-StatusIQ_Example.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		C24CB111F160BBBCC30772BC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7A7416CEC8C7D4191D8AC1DB /* Pods_StatusIQ_Example.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,12 +130,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52FE18B524C0C5AF00EE5075 /* Build configuration list for PBXNativeTarget "StatusIQ_Example" */;
 			buildPhases = (
-				DC758B99CC2E77E6E37F8779 /* [CP] Check Pods Manifest.lock */,
 				52FE188924C0C5AF00EE5075 /* Sources */,
 				52FE188A24C0C5AF00EE5075 /* Frameworks */,
 				52FE188B24C0C5AF00EE5075 /* Resources */,
 				52FE190324C3691900EE5075 /* Embed Frameworks */,
-				A44C3D24DC13952C75CC8376 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -274,49 +252,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A44C3D24DC13952C75CC8376 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StatusIQ_Example/Pods-StatusIQ_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/StatusIQ/StatusIQ.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StatusIQ.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StatusIQ_Example/Pods-StatusIQ_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DC758B99CC2E77E6E37F8779 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StatusIQ_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52FE188924C0C5AF00EE5075 /* Sources */ = {
@@ -489,7 +424,6 @@
 		};
 		52FE18B624C0C5AF00EE5075 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C52FE6627DC653EB0F7AA432 /* Pods-StatusIQ_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -509,7 +443,6 @@
 		};
 		52FE18B724C0C5AF00EE5075 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1ABEFBE34E4D60EAF45AB515 /* Pods-StatusIQ_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

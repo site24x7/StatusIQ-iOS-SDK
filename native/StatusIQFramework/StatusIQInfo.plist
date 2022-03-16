@@ -7,7 +7,7 @@
 	<key>Show Component status alone</key>
 	<false/>
 	<key>Status page url</key>
-	<string>https://testsp.site24x7signals.com/</string>
+	<string>https://status.site24x7.com</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
