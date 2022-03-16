@@ -37,7 +37,6 @@ class ContentSizeTableView: UITableView {
 public class StatusIQPageViewController : UIViewController {
     
     @IBOutlet weak var componentTableView: UITableView!
-    @IBOutlet weak var statusLabel: UILabel!
     
     fileprivate var statusData = StatusIQBuilder(withData: [:])
     fileprivate let activityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 25, height: 25))
@@ -63,7 +62,6 @@ public class StatusIQPageViewController : UIViewController {
     
     fileprivate func setTableViewProperties() {
         self.componentTableView.estimatedSectionHeaderHeight = 100
-        statusLabel.removeFromSuperview()
         componentTableView.dataSource = self
         componentTableView.dataSource = self
 
@@ -125,7 +123,7 @@ public class StatusIQPageViewController : UIViewController {
         }
     }
     
-    fileprivate func insertCelll(indexPath : IndexPath, tableView : UITableView) {
+    fileprivate func insertCell(indexPath : IndexPath, tableView : UITableView) {
         let componentObject = self.statusData.currentStatusArray[indexPath.row]
         var currentIndex = indexPath.row
         var insertDeleteIndexPathArray = [IndexPath]()
@@ -232,7 +230,7 @@ extension StatusIQPageViewController : UITableViewDataSource, UITableViewDelegat
     
     public func tableView(_  tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let _ = self.componentTableView.cellForRow(at: indexPath) as? StatusIQComponentTableViewCell {
-            self.insertCelll(indexPath: indexPath, tableView : tableView)
+            self.insertCell(indexPath: indexPath, tableView : tableView)
         }
     }
     

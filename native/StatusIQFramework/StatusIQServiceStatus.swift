@@ -19,26 +19,26 @@ import UIKit
 
 public class StatusIQServiceStatus: NSObject {
     
-    public static var statusPageUrl : String = "https://testsp.site24x7signals.com/sp/api/u/summary_details"
+    public static var statusPageUrl : String = "https://status.site24x7.com/sp/api/u/summary_details"
     public static var componentName : String = ""
     public static var fetchComponent : Bool = false
-        
-    public static func sdkInit() -> UIViewController {
+    static var definedUrl =  ""
+    
+    public static func sdkInit(withStatusPageUrl url: String = "") -> UIViewController {
+        self.definedUrl = url
         self.initializeVariables()
+        
         let storyboard = UIStoryboard(name: "StatusIQStoryboard", bundle: StatusIQCommonUtil.getBundle())
-
+        var mainVC = UIViewController()
+        
         if self.fetchComponent || !self.componentName.isEmpty{
-            let componentDetailVC = storyboard.instantiateViewController(withIdentifier: "StatusIQPageIdentifier")
-            let componentDetailNavVC = UINavigationController(rootViewController: componentDetailVC)
-            componentDetailNavVC.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
-            return componentDetailNavVC
+            mainVC = storyboard.instantiateViewController(withIdentifier: "StatusIQIdentifier")
         }else {
-            if let sdkStoryboard = storyboard.instantiateInitialViewController() {
-                sdkStoryboard.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
-                return sdkStoryboard
-            }
+            mainVC = storyboard.instantiateViewController(withIdentifier: "StatusIQPageIdentifier")
         }
-        return UIViewController()
+        mainVC.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
+
+        return mainVC
     }
     
     private static func initializeVariables() {
@@ -47,18 +47,21 @@ public class StatusIQServiceStatus: NSObject {
                 if let dictionary = NSDictionary(contentsOfFile: path) {
                     if let unwrappedstatusPageUrl = dictionary["Status page url"] as? String {
                         statusPageUrl = unwrappedstatusPageUrl
+                        if !self.definedUrl.isEmpty {
+                            self.statusPageUrl = definedUrl
+                        }
                         if !unwrappedstatusPageUrl.contains("sp/api/u/summary_details") {
                             if !(unwrappedstatusPageUrl.last == "/") {
-                                statusPageUrl += "/"
+                                self.statusPageUrl += "/"
                             }
-                            statusPageUrl += "sp/api/u/summary_details"
+                            self.statusPageUrl += "sp/api/u/summary_details"
                         }
                     }
                     if let unwrappedfetchComponent = dictionary["Show Component status alone"] as? Bool{
-                        fetchComponent = unwrappedfetchComponent
+                        self.fetchComponent = unwrappedfetchComponent
                     }
                     if let unwrappedcomponentName = dictionary["Component Name"] as? String {
-                        componentName = unwrappedcomponentName
+                        self.componentName = unwrappedcomponentName
                     }
                 }
             }

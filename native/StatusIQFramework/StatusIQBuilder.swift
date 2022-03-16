@@ -25,9 +25,6 @@ public class StatusIQBuilder: NSObject {
     var servicePageEncID = ""
     var statusPageOverallStatus = ""
     var statusPageOverallStatusDesc = ""
-//    var statusHistoryDetailArray  = ""
-//    var maintainanceDetail  = ""
-//    var statusPageDetail  = ""
     
     init(withData data : [String: Any] ) {
         if let activeIncidentDetails = data["active_incident_details"] as? [[String : Any]]{
