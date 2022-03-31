@@ -29,8 +29,9 @@ For instance, pod 'StatusIQ', :source=> https://github.com/site24x7/StatusIQ-iOS
 <img width="300" alt="Servie_status_active_Incidents" src="https://user-images.githubusercontent.com/98751716/161042665-5f9942d1-238d-46af-919a-4f2da47f3c60.png"> &nbsp;&nbsp;&nbsp;
 <img width="300" alt="Service_status_Component_Summary" src="https://user-images.githubusercontent.com/98751716/161042682-bc4fc877-933b-4a30-8383-0d21e906de31.png">&nbsp;&nbsp;&nbsp;
 
-<img width="300" alt="Service_status_Incident_history" src="https://user-images.githubusercontent.com/98751716/161042744-9d3116e9-16e9-47e0-91ee-7d8a8c36cc4e.png">&nbsp;&nbsp;&nbsp;
+<img width="300" alt="Service_status_Incident_history" src="https://user-images.githubusercontent.com/98751716/161053083-56e7d004-29d9-4ddc-b191-dd919b3f9753.png">&nbsp;&nbsp;&nbsp;
 <img width="300" alt="Service_status_Component_alone" src="https://user-images.githubusercontent.com/98751716/161042842-d5bdbcc5-6635-4a2f-abee-ccea7d8c498d.png">
+
 
 ## How to customize the StatusIQ framework 
 
