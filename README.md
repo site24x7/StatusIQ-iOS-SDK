@@ -11,9 +11,11 @@ Follow these steps to integrate the StatusIQ iOS pod into your business app:
 1. Open your business app in Xcode. 
 2. Add the repository source URL and pod name with your respective target to the pod file.
 For instance, pod 'StatusIQ', :source=> https://github.com/site24x7/StatusIQ-iOS-SDK.git
+
 	<img width="366" alt="11d3fa93-f1c6-4fcf-bad8-4b8be62d0063" src="https://user-images.githubusercontent.com/6861082/116873005-93a0d500-ac34-11eb-9360-5c162366e325.png">
 
 3. After adding the pod, navigate to the StatusIQInfo.plist file and under Status page url, provide your StatusIQ public page URL that you would like to showcase in the business app. If you wish to list the components you have on your StatusIQ page as your components in the business app, then, in the .plist file, set Show Component status alone to True. Provide the component of your preference in the field Component Name.
+
 	<img width="550" alt="8923e1f5-e860-4be4-b73c-024608e01871" src="https://user-images.githubusercontent.com/6861082/116873587-9223dc80-ac35-11eb-8b03-9c77be23b207.png">
 
 4. Based on the requirements of your business app, you can add the Tap button wherever required to showcase the status.
@@ -22,10 +24,10 @@ For instance, pod 'StatusIQ', :source=> https://github.com/site24x7/StatusIQ-iOS
 	let statusIQVC = StatusIQServiceStatus.sdkInit()
 	self.present(statusIQVC, animated: true, completion: nil)
 	
-![Status_active_Incidents](https://user-images.githubusercontent.com/98751716/161042665-5f9942d1-238d-46af-919a-4f2da47f3c60.png)	
-![Status_Component_Summary](https://user-images.githubusercontent.com/98751716/161042682-bc4fc877-933b-4a30-8383-0d21e906de31.png)
-![Status_Incident_history](https://user-images.githubusercontent.com/98751716/161042744-9d3116e9-16e9-47e0-91ee-7d8a8c36cc4e.png)
-![status_Component](https://user-images.githubusercontent.com/98751716/161042842-d5bdbcc5-6635-4a2f-abee-ccea7d8c498d.png)
+<img width="300" alt="Servie_status_active_Incidents" src="https://user-images.githubusercontent.com/98751716/161042665-5f9942d1-238d-46af-919a-4f2da47f3c60.png"> &nbsp;&nbsp;&nbsp;   
+ <img width="300" alt="Service_status_Component_Summary" src="https://user-images.githubusercontent.com/98751716/161042682-bc4fc877-933b-4a30-8383-0d21e906de31.png">&nbsp;&nbsp;&nbsp;
+<img width="300" alt="Service_status_Incident_history" src="https://user-images.githubusercontent.com/98751716/161042744-9d3116e9-16e9-47e0-91ee-7d8a8c36cc4e.png">&nbsp;&nbsp;&nbsp;
+<img width="300" alt="Service_status_Component_alone" src="https://user-images.githubusercontent.com/98751716/161042842-d5bdbcc5-6635-4a2f-abee-ccea7d8c498d.png">
 
 ## How to customize the StatusIQ framework 
 
