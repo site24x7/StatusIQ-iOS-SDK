@@ -22,13 +22,11 @@ public class StatusIQIncidentHistoryViewController :  UIViewController, UITableV
    
     @IBOutlet weak var overallTable: UITableView!
     fileprivate let resolvedIncidentDetailArray = StatusIQCommonUtil.statusData.resolvedIncidentDetailArray
-    fileprivate var placeholderLabel = UILabel()
 
     override public func viewDidLoad() {
         super.viewDidLoad()
-        self.view.removeEmptyScreen(placeholderLabel: self.placeholderLabel)
         if self.resolvedIncidentDetailArray.isEmpty {
-            self.view.setEmptyScreenText(placeholderLabel: self.placeholderLabel, text: "There is no data")
+            StatusIQAdapter.errorHandle(parentView: self.view, errorMessage: "There is no data")
         }
         self.navigationController?.navigationBar.barTintColor = StatusIQCustomization.navigationBarBackgroundColor
         self.view.backgroundColor = StatusIQCustomization.backgroundColor

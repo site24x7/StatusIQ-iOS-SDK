@@ -34,10 +34,14 @@ public class StatusIQViewController: UITableViewController  {
     
     override public func viewDidLoad() {
          super.viewDidLoad()
-        if StatusIQServiceStatus.fetchComponent && !StatusIQServiceStatus.componentName.isEmpty {
-            self.setStatusDataFromServer()
+        if StatusIQServiceStatus.statusPageUrl.isEmpty {
+            StatusIQAdapter.errorHandle(parentView: self.view, errorMessage: "Status page base URL not found")
         }else {
-            StatusIQAdapter.errorHandle(parentView: self.view, errorMessage: "There is no such status page available")
+            if !StatusIQServiceStatus.componentName.isEmpty {
+                self.setStatusDataFromServer()
+            }else {
+                StatusIQAdapter.errorHandle(parentView: self.view, errorMessage: "Please provide a component name")
+            }
         }
         self.title = "Service Status"
         self.navigationController?.navigationBar.barTintColor = StatusIQCustomization.navigationBarBackgroundColor

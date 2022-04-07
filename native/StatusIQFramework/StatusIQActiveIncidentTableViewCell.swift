@@ -51,13 +51,13 @@ class StatusIQActiveIncidentTableViewCell: UITableViewCell {
     }
     
     @IBAction func showAllAction(_ sender: Any) {
-        showAllandLess(text : "showall")
-        collapseExpandDelegate?.buttonAction(selectedIndexPath: currentIndexPath)
+        self.showAllandLess(text : "showall")
+        self.collapseExpandDelegate?.buttonAction(selectedIndexPath: currentIndexPath)
     }
     
     @IBAction func showLessAction(_ sender: Any) {
-        showAllandLess(text : "showless")
-        collapseExpandDelegate?.buttonAction(selectedIndexPath: currentIndexPath)
+        self.showAllandLess(text : "showless")
+        self.collapseExpandDelegate?.buttonAction(selectedIndexPath: currentIndexPath)
     }
     
     fileprivate func setFont() {
@@ -72,7 +72,7 @@ class StatusIQActiveIncidentTableViewCell: UITableViewCell {
         self.showLess.titleLabel?.font =  StatusIQCommonUtil.getFont(withSize: 13)
     }
     
-    func  showAllandLess(text : String)  {
+    fileprivate func showAllandLess(text : String)  {
 
         if text == "showall" {
             self.showLessBottomConstraint.isActive = true

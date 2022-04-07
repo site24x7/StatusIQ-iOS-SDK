@@ -70,20 +70,7 @@ extension UIView {
     func setCardViewDesign() {
         self.layer.cornerRadius = 5
         self.layer.borderWidth = 1
-        self.layer.borderColor = StatusIQCommonUtil.hexStringToUIColor(hex: "#EDEBEB").cgColor    }
-        
-    func setEmptyScreenText( placeholderLabel : UILabel , text : String , withPosition position : CGPoint? = nil) {
-        placeholderLabel.frame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: 30)
-        placeholderLabel.center = self.center
-        placeholderLabel.textAlignment = .center
-        if let unwrappedPosition = position {
-            placeholderLabel.center = unwrappedPosition
-        }
-        placeholderLabel.text = text
-        placeholderLabel.font =  StatusIQCommonUtil.getFont(withSize: 15)
-        if !self.subviews.contains(placeholderLabel) {
-            self.addSubview(placeholderLabel)
-        }
+        self.layer.borderColor = StatusIQCommonUtil.hexStringToUIColor(hex: "#EDEBEB").cgColor
     }
     
     func removeEmptyScreen(placeholderLabel : UILabel ) {

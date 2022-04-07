@@ -28,11 +28,11 @@ public class StatusIQComponentData: NSObject {
             if let serviceDetail = responseData[componentId] as? [String: Any]{
                 
                 if serviceDetail["uptime_perc"] != nil, let value = serviceDetail["uptime_perc"] as? CGFloat {
-                    uptime_perc = "\(value)"
+                    self.uptime_perc = "\(value)"
                 }
 
                 if serviceDetail["total_incident_count"] != nil, let value = serviceDetail["total_incident_count"] as? UInt {
-                    total_incident_count = String(value)
+                    self.total_incident_count = String(value)
                 }
                 
                 if let statusHistoryData = serviceDetail["status_history"] as? [String : AnyObject], let dayWiseStatusHistory = statusHistoryData["day_wise_status_history"] as? [AnyObject] {

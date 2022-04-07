@@ -19,54 +19,74 @@ import UIKit
 
 public class StatusIQServiceStatus: NSObject {
     
-    public static var statusPageUrl : String = "https://status.site24x7.com/sp/api/u/summary_details"
-    public static var componentName : String = ""
-    public static var fetchComponent : Bool = false
-    static var definedUrl =  ""
+    public static var statusPageUrl = "https://status.site24x7.com/sp/api/u/summary_details"
+    public static var isComponentStatusAlone = false
+    public static var componentName = ""
+
+    static var unwrappedStatusPageUrl =  ""
+    static var unwrappedIsComponentStatusAlone =  false
+    static var unwrappedComponentName =  ""
     
-    public static func sdkInit(withStatusPageUrl url: String = "") -> UIViewController {
-        self.definedUrl = url
-        self.initializeVariables()
+    public static func sdkInit() -> UIViewController { //Via info.plist
+        self.initializeVariables(isFromInfoList: true)
+        return self.getStatusStoryboard()
+    }
+    
+    public static func sdkInit(withStatusPageUrl url: String, isComponentStatusAlone: Bool = false, withComponentName componentName: String = "" ) -> UIViewController { //Via method
+        self.unwrappedStatusPageUrl = url
+        self.unwrappedIsComponentStatusAlone = isComponentStatusAlone
+        self.unwrappedComponentName = componentName
         
+        self.initializeVariables(isFromInfoList: false)
+        return self.getStatusStoryboard()
+    }
+    
+    private static func getStatusStoryboard() -> UIViewController {
         let storyboard = UIStoryboard(name: "StatusIQStoryboard", bundle: StatusIQCommonUtil.getBundle())
         var mainVC = UIViewController()
         
-        if self.fetchComponent || !self.componentName.isEmpty{
+        if self.isComponentStatusAlone {
             mainVC = storyboard.instantiateViewController(withIdentifier: "StatusIQIdentifier")
         }else {
             mainVC = storyboard.instantiateViewController(withIdentifier: "StatusIQPageIdentifier")
         }
         mainVC.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
-
         return mainVC
     }
     
-    private static func initializeVariables() {
-        if let bundle = StatusIQCommonUtil.getBundle() {
-            if let path = bundle.path(forResource: "StatusIQInfo", ofType: "plist") {
-                if let dictionary = NSDictionary(contentsOfFile: path) {
-                    if let unwrappedstatusPageUrl = dictionary["Status page url"] as? String {
-                        statusPageUrl = unwrappedstatusPageUrl
-                        if !self.definedUrl.isEmpty {
-                            self.statusPageUrl = definedUrl
+    private static func initializeVariables(isFromInfoList : Bool) {
+        if isFromInfoList {
+            if let bundle = StatusIQCommonUtil.getBundle() {
+                if let path = bundle.path(forResource: "StatusIQInfo", ofType: "plist") {
+                    if let dictionary = NSDictionary(contentsOfFile: path) {
+                        if let unwrappedstatusPageUrl = dictionary["Status page url"] as? String {
+                            self.statusPageUrl = unwrappedstatusPageUrl
                         }
-                        if !unwrappedstatusPageUrl.contains("sp/api/u/summary_details") {
-                            if !(unwrappedstatusPageUrl.last == "/") {
-                                self.statusPageUrl += "/"
-                            }
-                            self.statusPageUrl += "sp/api/u/summary_details"
+                        if let unwrappedfetchComponent = dictionary["Show Component status alone"] as? Bool{
+                            self.isComponentStatusAlone = unwrappedfetchComponent
                         }
-                    }
-                    if let unwrappedfetchComponent = dictionary["Show Component status alone"] as? Bool{
-                        self.fetchComponent = unwrappedfetchComponent
-                    }
-                    if let unwrappedcomponentName = dictionary["Component Name"] as? String {
-                        self.componentName = unwrappedcomponentName
+                        if let unwrappedcomponentName = dictionary["Component Name"] as? String {
+                            self.componentName = unwrappedcomponentName
+                        }
                     }
                 }
             }
+        } else {
+            self.statusPageUrl = self.unwrappedStatusPageUrl
+            self.isComponentStatusAlone = self.unwrappedIsComponentStatusAlone
+            self.componentName = self.unwrappedComponentName
+        }
+        
+        if !self.statusPageUrl.isEmpty {
+            if !self.statusPageUrl.contains("sp/api/u/summary_details") {
+                if !(self.statusPageUrl.last == "/") {
+                    self.statusPageUrl += "/"
+                }
+                self.statusPageUrl += "sp/api/u/summary_details"
+            }
         }
     }
+    
 }
 
 

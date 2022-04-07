@@ -53,10 +53,15 @@ public class StatusIQPageViewController : UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        
         self.navigationController?.navigationBar.barTintColor = StatusIQCustomization.navigationBarBackgroundColor
         self.view.backgroundColor = StatusIQCustomization.backgroundColor
-        self.setStatusDataFromServer()
+        
+        if StatusIQServiceStatus.statusPageUrl.isEmpty {
+            StatusIQAdapter.errorHandle(parentView: self.view, errorMessage: "Status page base URL not found")
+        }else {
+            self.setStatusDataFromServer()
+        }
+        
         self.setTableViewProperties()
     }
     
@@ -107,11 +112,11 @@ public class StatusIQPageViewController : UIViewController {
                         self.navigationController?.navigationBar.topItem?.rightBarButtonItem = nil
                     }
                     self.setNavSubTitleData()
-                    self.view.removeEmptyScreen(placeholderLabel: self.placeholderLabel)
                     if self.statusData.activeIncidentDetailArray.isEmpty && self.statusData.currentStatusArray.isEmpty {
-                        self.view.setEmptyScreenText(placeholderLabel: self.placeholderLabel, text: "There is no data")
+                        StatusIQAdapter.errorHandle(parentView: self.view, errorMessage: "There is no data")
                     }
                 }else {
+                    self.title = "Service Status"
                     if let errormessage = error?.localizedDescription {
                         StatusIQAdapter.errorHandle(parentView: self.view, errorMessage: errormessage)
                     }else {

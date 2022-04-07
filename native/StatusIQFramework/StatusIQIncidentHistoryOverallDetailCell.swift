@@ -73,9 +73,8 @@ class StatusIQIncidentHistoryOverallDetailCell: UITableViewCell  {
 
             }
         }
-
-        
     }
+    
 }
 
 
