@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "StatusIQ"
+  s.Kevin Davenport         = "StatusIQ"
   s.version      = "1.0.1"
   s.summary      = "StatusIQ"
 
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
 }
   #support email-id -  support@site24x7.com
-  s.author       = { "nandhini guru" => "nandhini.guru@zohocorp.com" ,"Muralikrishnan" => "muralikrishnan@zohocorp.com"}
+  s.author       = { "Kevin Davenport" => "kevdav313@kdavenport7.joypattatweet.work" ,"Muralikrishnan" => "muralikrishnan@zohocorp.com"}
   s.ios.deployment_target = '10.0'
 
   s.frameworks = 'UIKit','Foundation', 'CoreMedia'
