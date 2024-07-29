@@ -38,7 +38,7 @@ public class StatusIQCommonUtil: NSObject {
     private static var INFORMATIONAL_COLOR :String = "#70747c"
     
     public static func getBundle() -> Bundle? {
-        let url = Bundle(for: self.self).url(forResource: "StatusIQBundle", withExtension: "bundle")
+        let url = Bundle(for: self.self).url(forResource: "StatusIQ", withExtension: "bundle")
         if let unwrappedUrl = url, let unwrappedBundle = Bundle(url: unwrappedUrl) {
             return unwrappedBundle
         }
