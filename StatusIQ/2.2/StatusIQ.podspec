@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   
   s.resources = ['native/StatusIQFramework/Resource/*{xcassets,storyboard}', 'native/StatusIQFramework/Source/IncidentHistory/*{xib}', 'native/StatusIQFramework/Source/StatusIQComponentAlone/*{xib}']
     
-  s.resource_bundles = { 'StatusIQ' => ['native/StatusIQFramework/Resource/*.{plist,storyboard,xcassets}', 'native/StatusIQFramework/Source/IncidentHistory/*{xib}', 'native/StatusIQFramework/Source/StatusIQComponentAlone/*{xib}']}
+  s.resource_bundles = { 'StatusIQBundle' => ['native/StatusIQFramework/Resource/*.{plist,storyboard,xcassets}', 'native/StatusIQFramework/Source/IncidentHistory/*{xib}', 'native/StatusIQFramework/Source/StatusIQComponentAlone/*{xib}']}
 
   s.source       = { :git => "https://github.com/site24x7/StatusIQ-iOS-SDK.git", :tag => s.version.to_s} # commit ID from Authkey support
 
