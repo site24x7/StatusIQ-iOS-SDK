@@ -25,6 +25,10 @@ public class StatusIQIncidentHistoryViewController :  UIViewController, UITableV
 
     override public func viewDidLoad() {
         super.viewDidLoad()
+        self.overrideUserInterfaceStyle = StatusIQServiceStatus.theme
+        self.navigationController?.overrideUserInterfaceStyle = StatusIQServiceStatus.theme
+        self.navigationController?.navigationBar.tintColor = UIColor(named: "StatusIQNavigationItemColor", in: StatusIQCommonUtil.getBundle(), compatibleWith: nil) ?? UIColor()
+
         if self.resolvedIncidentDetailArray.isEmpty {
             StatusIQAdapter.errorHandle(parentView: self.view, errorMessage: "There is no data")
         }

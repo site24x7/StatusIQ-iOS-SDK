@@ -64,6 +64,8 @@ public class StatusIQPageViewController : UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
+        self.overrideUserInterfaceStyle = StatusIQServiceStatus.theme
+        self.navigationController?.overrideUserInterfaceStyle = StatusIQServiceStatus.theme
         self.navigationController?.navigationBar.barTintColor = StatusIQCustomization.navigationBarBackgroundColor
         self.view.backgroundColor = StatusIQCustomization.backgroundColor
         

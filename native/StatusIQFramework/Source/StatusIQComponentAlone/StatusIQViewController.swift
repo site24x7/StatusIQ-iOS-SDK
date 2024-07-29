@@ -34,6 +34,9 @@ public class StatusIQViewController: UITableViewController  {
     
     override public func viewDidLoad() {
          super.viewDidLoad()
+        self.overrideUserInterfaceStyle = StatusIQServiceStatus.theme
+        self.navigationController?.overrideUserInterfaceStyle = StatusIQServiceStatus.theme
+
         if StatusIQServiceStatus.statusPageUrl.isEmpty {
             StatusIQAdapter.errorHandle(parentView: self.view, errorMessage: "Status page base URL not found")
         }else {

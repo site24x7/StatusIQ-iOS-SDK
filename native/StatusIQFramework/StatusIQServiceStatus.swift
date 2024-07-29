@@ -22,6 +22,7 @@ public class StatusIQServiceStatus: NSObject {
     public static var statusPageUrl = "https://status.site24x7.com/sp/api/u/summary_details"
     public static var isComponentStatusAlone = false
     public static var componentName = ""
+    public static var theme : UIUserInterfaceStyle = .dark
 
     static var unwrappedStatusPageUrl =  ""
     static var unwrappedIsComponentStatusAlone =  false
@@ -37,7 +38,6 @@ public class StatusIQServiceStatus: NSObject {
         self.unwrappedStatusPageUrl = url
         self.unwrappedIsComponentStatusAlone = isComponentStatusAlone
         self.unwrappedComponentName = componentName
-        
         self.unwrappedTheme = theme
 
         self.initializeVariables(isFromInfoList: false)
@@ -52,10 +52,6 @@ public class StatusIQServiceStatus: NSObject {
             mainVC = storyboard.instantiateViewController(withIdentifier: "StatusIQIdentifier")
         }else {
             mainVC = storyboard.instantiateViewController(withIdentifier: "StatusIQPageIdentifier")
-
-//            if let statusIQPageVC = storyboard.instantiateViewController(withIdentifier: "StatusIQPageIdentifier") as? StatusIQPageViewController {
-//                mainVC = statusIQPageVC
-//            }
         }
         mainVC.overrideUserInterfaceStyle = self.unwrappedTheme
         mainVC.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
@@ -77,7 +73,7 @@ public class StatusIQServiceStatus: NSObject {
                             self.componentName = unwrappedcomponentName
                         }
                         if let unwrappedTheme = dictionary["Theme"] as? Int {
-                            self.unwrappedTheme = UIUserInterfaceStyle(rawValue: unwrappedTheme) ?? .light
+                            self.theme = UIUserInterfaceStyle(rawValue: unwrappedTheme) ?? .light
                         }
                     }
                 }
@@ -86,6 +82,7 @@ public class StatusIQServiceStatus: NSObject {
             self.statusPageUrl = self.unwrappedStatusPageUrl
             self.isComponentStatusAlone = self.unwrappedIsComponentStatusAlone
             self.componentName = self.unwrappedComponentName
+            self.theme = self.unwrappedTheme
         }
         
         if !self.statusPageUrl.isEmpty {
