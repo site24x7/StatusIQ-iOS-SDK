@@ -19,8 +19,7 @@ import UIKit
 import StatusIQ
 
 class ViewController: UIViewController, UITextViewDelegate {
-    
-    var menuShowing = true
+
     @IBOutlet weak var slideMenu: UIView!
 
     override func viewDidLoad() {
@@ -29,15 +28,8 @@ class ViewController: UIViewController, UITextViewDelegate {
     }
   
     @IBAction func openMenu(_ sender: Any) {
-        if self.menuShowing {
-            self.slideMenu.isHidden = false
-            self.menuShowing = false
-        } else {
-            self.slideMenu.isHidden = true
-            self.menuShowing = true
-        }
+        self.slideMenu.isHidden = !self.slideMenu.isHidden
     }
-    
     
     @IBAction func menuSideButtonAction(_ sender: UIButton) {
         slideMenu.isHidden = true
@@ -53,8 +45,8 @@ class ViewController: UIViewController, UITextViewDelegate {
     
     @IBAction func serviceStatusAction(_ sender: Any) {
         slideMenu.isHidden = true
-        present(StatusIQServiceStatus.sdkInit(), animated: true, completion: nil)
-      
+        let VC = StatusIQServiceStatus.sdkInit(withStatusPageUrl: "https://status.site24x7.com", withTheme: .dark)
+        present(VC, animated: true, completion: nil)
     }
     
 }

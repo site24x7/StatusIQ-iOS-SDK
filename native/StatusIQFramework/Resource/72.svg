@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>72</title>
+    <g id="72" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+        <g id="Group" transform="translate(11.942388, 11.942388) rotate(45.000000) translate(-11.942388, -11.942388) translate(5.442388, 5.442388)" stroke="#000000" stroke-width="1.5">
+            <line x1="0" y1="6.5" x2="13" y2="6.5" id="Path-5"></line>
+            <line x1="6.5" y1="0" x2="6.5" y2="13" id="Path-8"></line>
+        </g>
+    </g>
+</svg>

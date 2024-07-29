@@ -1,0 +1,901 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0996B2D64830A39C556E98A6A3F97FC9 /* StatusIQServiceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07743F72F8F47055FC06E998666C64DF /* StatusIQServiceStatus.swift */; };
+		0A4B0301C51D3ED63697081AEA0ACB87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5558D0A2D6EEBB3A003A9CA16A60472A /* Foundation.framework */; };
+		0F8E217E5CBCF5022B031C5319E68D21 /* StatusIQIncidentHistoryOverallDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C7B2A6A4E600E6BE0A88B8C1D6961C /* StatusIQIncidentHistoryOverallDetailCell.swift */; };
+		138E249502759F3C7BC76732D9293F76 /* StatusIQInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8133F7C72C3E9F0B602DA026D08B305C /* StatusIQInfo.plist */; };
+		13CA7A75126ED9F3A40EA87D511CC0C4 /* StatusInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F52A3AF938B6937CF0C6B767531C2E /* StatusInfoTableViewCell.swift */; };
+		140E4BD7E464BB91BC7572C91EC8ABB0 /* icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A9A7A1E61CF862BFAEDEAD20BB2EBD /* icons.xcassets */; };
+		147082A8DBFF229FB044B5A302E41A20 /* StatusIQ-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 987088A3B18FCEFB348829C5F85B9C1A /* StatusIQ-dummy.m */; };
+		14B7CA7FC82093DBF32ECB96C794D24E /* StatusIQAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9F48EC1B41DB17202EECC41C98BDD2 /* StatusIQAdapter.swift */; };
+		254C95812D22BEB23F00D0ACBEDC5025 /* ComponentNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A059C754E0D6D86464A220874257B /* ComponentNameTableViewCell.swift */; };
+		34CA93F9E99F00303D84441904716B72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5558D0A2D6EEBB3A003A9CA16A60472A /* Foundation.framework */; };
+		34E773E472F7ABDD5FF1B11D66FC0192 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0EF2003F3A0C760BCB4BB2EE03BC11 /* UIKit.framework */; };
+		36C9C783AA5D3C643A3B06BCCA689943 /* StatusIQBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C71AFBEF26A7EC08E2E46A8FEA35970 /* StatusIQBuilder.swift */; };
+		3791FF3A5AA4636D1577989DC61A46FB /* StatusIQStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F44214A18E82EAB7ECE051B360535D0 /* StatusIQStoryboard.storyboard */; };
+		3EC65CC5D020F4B2FF6364CFDD1D2F16 /* StatusIQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702587865CD52B844629286D8BC8C530 /* StatusIQViewController.swift */; };
+		43F5EA03B747537F7979BAC86C416AFA /* StatusIQComponentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D6AE7E77D227E217A1DDF49FA7AA85 /* StatusIQComponentTableViewCell.swift */; };
+		4C6B1237ABEC2A3EE510EBD68FE57746 /* StatusIQHTTPConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1283328C6C99D1B8F3D48D870EA504 /* StatusIQHTTPConnection.swift */; };
+		4FDDEABCFE5B807C2A5CB8E983B6295A /* StatusIQSingleIncidentInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45BA773894324AF6F1017BA5875C6BC1 /* StatusIQSingleIncidentInfoView.xib */; };
+		57932B07E644460AE44A56A917767715 /* StatusIQBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04E5B997C1FACD9929F3AF6DAC6B3F5C /* StatusIQBundle.bundle */; };
+		64B0FD370CEA9C29B5E7755B2B671A36 /* StatusIQCommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD76EF1E323010FEC0F31BD8B23D098 /* StatusIQCommonUtil.swift */; };
+		6534C789EFA1547A4B5EE7B5F86842A6 /* StatusIQIncidentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002163A7378FB0BAC711DC6A661A06D2 /* StatusIQIncidentDetailView.swift */; };
+		68EA0C910EF4D98BEC7C113F2D6A2729 /* StatusIQComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00484FC31DC5515A134330CB47417C1 /* StatusIQComponentData.swift */; };
+		70EF1DE0A52A2F9299833BA196EDE2A5 /* StatusIQUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442AA0AECFECE057BA14AE5AF3C6F66 /* StatusIQUIExtension.swift */; };
+		73303B955266749D2B68A70345782C5A /* StatusIQResolvedIncidentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798B86828FE04AFD33D265F4F872A33B /* StatusIQResolvedIncidentDetails.swift */; };
+		770C771A36FB269A4E94A6500BC9CFD6 /* StatusIQPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894EEB99478ABE1675297CC9641FACD /* StatusIQPageViewController.swift */; };
+		7BAB8BAD7DF45FC3D6AF8B5E1E92FFC9 /* StatusIQSingleIncidentInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AA130ACB5BC57705BD87268ACF5436 /* StatusIQSingleIncidentInfoView.swift */; };
+		7CA57EADDCB82051B1947ADB74089894 /* Pods-StatusIQ_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EE2F2D07945DD05D536DE62AB3F6BBB /* Pods-StatusIQ_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		837BE1E183B6E8D79EA32EBF2350E000 /* StatusIQActiveIncidentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED04917B7B7868662EF611FF61E5E35 /* StatusIQActiveIncidentDetails.swift */; };
+		840399FD33C83E4F38A7E38736848AF2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89FFD3F2AF00C24F3834FE5445D5CEE /* CoreMedia.framework */; };
+		942297F910855AC9361597E08A141CB9 /* StatusIQIncidentDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19AC5BF47CF7C0C9B14DC0B78CF5B239 /* StatusIQIncidentDetailView.xib */; };
+		9C831CBD16B2A84B9C1069B29B6B3A1A /* StatusIQIncidentHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96DBFF06D6E07E36DFD784D9E239712 /* StatusIQIncidentHistoryViewController.swift */; };
+		A60F1D68F3AFC466991415C816431B6B /* DateAndStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B76E92B03F984717AC6A3E40C576D066 /* DateAndStatusView.xib */; };
+		A9A95B6873BE52D037C9206DB1409A43 /* StatusIQActiveIncidentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18267D96A76DFFCD04E2F65A3A349B3D /* StatusIQActiveIncidentTableViewCell.swift */; };
+		AB865CD898E40926947854A38771AC78 /* StatusIQcustomization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D6272151A4EDB04255292C3458BD51 /* StatusIQcustomization.swift */; };
+		AC32A5F00930372B07A2BA2298C16ACF /* icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A9A7A1E61CF862BFAEDEAD20BB2EBD /* icons.xcassets */; };
+		B428CD1161A585C73FEB973EA68C8D97 /* StatusIQ-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6842711201C683E0E980B02498D9CF6D /* StatusIQ-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60837367158511F5DDD0EC56EADA960 /* StatusIQStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F44214A18E82EAB7ECE051B360535D0 /* StatusIQStoryboard.storyboard */; };
+		C0F3EE7D3A05505DEFA65162DA1063E8 /* ComponentHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5748A4E339454E6D8D6BD4287B3B7F21 /* ComponentHistoryTableViewCell.swift */; };
+		C6A9205197CDEFC0822B83AE7EB9B3D7 /* StatusIQInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8133F7C72C3E9F0B602DA026D08B305C /* StatusIQInfo.plist */; };
+		CCFCF0CADF0FBB9165C43514167EBD4D /* DateAndStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B76E92B03F984717AC6A3E40C576D066 /* DateAndStatusView.xib */; };
+		D4268AEF943ED87F7E4D5AA53C13996B /* StatusIQCurrentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6013018C0B0C6EB74539229D7BD54BB /* StatusIQCurrentStatus.swift */; };
+		D61EAC9437A1FC3CDDE83C304CB398C5 /* StatusIQThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3EC2B0ACD87F3D2D980E338A0367AE /* StatusIQThemeManager.swift */; };
+		DD6C178F9C7C9B59711AD0F5F7E14EA3 /* Pods-StatusIQ_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 447F4DB6F5EBB401FFEC8F01E0B42C4D /* Pods-StatusIQ_Example-dummy.m */; };
+		ECB9F14F81B48BAB91BFBF2FB6DFCB6F /* StatusIQIncidentDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19AC5BF47CF7C0C9B14DC0B78CF5B239 /* StatusIQIncidentDetailView.xib */; };
+		F3CE77566A730125460EC6040958934B /* StatusIQSingleIncidentInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45BA773894324AF6F1017BA5875C6BC1 /* StatusIQSingleIncidentInfoView.xib */; };
+		F98B34BE0E569C85CCD40D28A787786C /* DateAndStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451069F913A43E54C367EFCA8B8621BD /* DateAndStatusView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		094B5E0A138221859EDC85A249692558 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B91040CE13C58946E273B50EF1C1319B;
+			remoteInfo = StatusIQ;
+		};
+		75F829CE41C607916720B42E0C5B017D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 202FF75CE2AAB61480BA8D3192467CDF;
+			remoteInfo = "StatusIQ-StatusIQBundle";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002163A7378FB0BAC711DC6A661A06D2 /* StatusIQIncidentDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQIncidentDetailView.swift; sourceTree = "<group>"; };
+		01F055D9A82256C5DB0D1BD43A02E0A8 /* Pods_StatusIQ_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StatusIQ_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A9A7A1E61CF862BFAEDEAD20BB2EBD /* icons.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = icons.xcassets; sourceTree = "<group>"; };
+		04E5B997C1FACD9929F3AF6DAC6B3F5C /* StatusIQBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatusIQBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		07743F72F8F47055FC06E998666C64DF /* StatusIQServiceStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusIQServiceStatus.swift; path = native/StatusIQFramework/StatusIQServiceStatus.swift; sourceTree = "<group>"; };
+		0EE2F2D07945DD05D536DE62AB3F6BBB /* Pods-StatusIQ_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StatusIQ_Example-umbrella.h"; sourceTree = "<group>"; };
+		10D6272151A4EDB04255292C3458BD51 /* StatusIQcustomization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQcustomization.swift; sourceTree = "<group>"; };
+		11BD2E7DC2A327884C9627B2BC2A034D /* Pods-StatusIQ_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StatusIQ_Example.release.xcconfig"; sourceTree = "<group>"; };
+		18267D96A76DFFCD04E2F65A3A349B3D /* StatusIQActiveIncidentTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQActiveIncidentTableViewCell.swift; sourceTree = "<group>"; };
+		197F98E101872DF3E6AFDABDE4FCBE81 /* StatusIQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StatusIQ.debug.xcconfig; sourceTree = "<group>"; };
+		19AC5BF47CF7C0C9B14DC0B78CF5B239 /* StatusIQIncidentDetailView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = StatusIQIncidentDetailView.xib; sourceTree = "<group>"; };
+		1ED04917B7B7868662EF611FF61E5E35 /* StatusIQActiveIncidentDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQActiveIncidentDetails.swift; sourceTree = "<group>"; };
+		2894EEB99478ABE1675297CC9641FACD /* StatusIQPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQPageViewController.swift; sourceTree = "<group>"; };
+		3442AA0AECFECE057BA14AE5AF3C6F66 /* StatusIQUIExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQUIExtension.swift; sourceTree = "<group>"; };
+		35F1BF38220EC7AD4AB885ECF3A2C7B5 /* Pods-StatusIQ_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StatusIQ_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3AEA2AEEDCFCD8346F59255FCAD85EA1 /* StatusIQ.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = StatusIQ.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3D4881720F1BEDBBE33DE2DB168B6AF9 /* ResourceBundle-StatusIQBundle-StatusIQ-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-StatusIQBundle-StatusIQ-Info.plist"; sourceTree = "<group>"; };
+		447F4DB6F5EBB401FFEC8F01E0B42C4D /* Pods-StatusIQ_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StatusIQ_Example-dummy.m"; sourceTree = "<group>"; };
+		451069F913A43E54C367EFCA8B8621BD /* DateAndStatusView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DateAndStatusView.swift; sourceTree = "<group>"; };
+		45BA773894324AF6F1017BA5875C6BC1 /* StatusIQSingleIncidentInfoView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = StatusIQSingleIncidentInfoView.xib; sourceTree = "<group>"; };
+		5558D0A2D6EEBB3A003A9CA16A60472A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5748A4E339454E6D8D6BD4287B3B7F21 /* ComponentHistoryTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ComponentHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		5F44214A18E82EAB7ECE051B360535D0 /* StatusIQStoryboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = StatusIQStoryboard.storyboard; sourceTree = "<group>"; };
+		639A059C754E0D6D86464A220874257B /* ComponentNameTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ComponentNameTableViewCell.swift; sourceTree = "<group>"; };
+		6842711201C683E0E980B02498D9CF6D /* StatusIQ-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StatusIQ-umbrella.h"; sourceTree = "<group>"; };
+		68F52A3AF938B6937CF0C6B767531C2E /* StatusInfoTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusInfoTableViewCell.swift; sourceTree = "<group>"; };
+		6E7355B163A39BCD61CE3356D763881C /* Pods-StatusIQ_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StatusIQ_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6F3094BC01335CAAA6BBD9A36C7AB705 /* Pods-StatusIQ_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StatusIQ_Example.modulemap"; sourceTree = "<group>"; };
+		702587865CD52B844629286D8BC8C530 /* StatusIQViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQViewController.swift; sourceTree = "<group>"; };
+		71C7B2A6A4E600E6BE0A88B8C1D6961C /* StatusIQIncidentHistoryOverallDetailCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQIncidentHistoryOverallDetailCell.swift; sourceTree = "<group>"; };
+		798B86828FE04AFD33D265F4F872A33B /* StatusIQResolvedIncidentDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQResolvedIncidentDetails.swift; sourceTree = "<group>"; };
+		7BAC6451D0E905EA893CD364278BD017 /* Pods-StatusIQ_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StatusIQ_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7FD76EF1E323010FEC0F31BD8B23D098 /* StatusIQCommonUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQCommonUtil.swift; sourceTree = "<group>"; };
+		8133F7C72C3E9F0B602DA026D08B305C /* StatusIQInfo.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = StatusIQInfo.plist; sourceTree = "<group>"; };
+		8C71AFBEF26A7EC08E2E46A8FEA35970 /* StatusIQBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQBuilder.swift; sourceTree = "<group>"; };
+		987088A3B18FCEFB348829C5F85B9C1A /* StatusIQ-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StatusIQ-dummy.m"; sourceTree = "<group>"; };
+		9D3EC2B0ACD87F3D2D980E338A0367AE /* StatusIQThemeManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQThemeManager.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2AA130ACB5BC57705BD87268ACF5436 /* StatusIQSingleIncidentInfoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQSingleIncidentInfoView.swift; sourceTree = "<group>"; };
+		A7FD6171C054D80DABC2EEA9640D1BBE /* StatusIQ.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StatusIQ.modulemap; sourceTree = "<group>"; };
+		AE9F48EC1B41DB17202EECC41C98BDD2 /* StatusIQAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQAdapter.swift; sourceTree = "<group>"; };
+		B5261FE29A1324DC90A8C85346008FF6 /* StatusIQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StatusIQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5F2034E768DAB57DA6068BE805CC8D9 /* Pods-StatusIQ_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StatusIQ_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B6013018C0B0C6EB74539229D7BD54BB /* StatusIQCurrentStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQCurrentStatus.swift; sourceTree = "<group>"; };
+		B76E92B03F984717AC6A3E40C576D066 /* DateAndStatusView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DateAndStatusView.xib; sourceTree = "<group>"; };
+		B96DBFF06D6E07E36DFD784D9E239712 /* StatusIQIncidentHistoryViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQIncidentHistoryViewController.swift; sourceTree = "<group>"; };
+		C00484FC31DC5515A134330CB47417C1 /* StatusIQComponentData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQComponentData.swift; sourceTree = "<group>"; };
+		CD98AFFB9E9ACD85286CF0EB89859D7B /* StatusIQ-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "StatusIQ-Info.plist"; sourceTree = "<group>"; };
+		DD0EF2003F3A0C760BCB4BB2EE03BC11 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DDF70F4FEDA7F6F09F465AA0474416AA /* StatusIQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StatusIQ.release.xcconfig; sourceTree = "<group>"; };
+		F013EBFB258C688D028A4BA6C4334AE5 /* Pods-StatusIQ_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StatusIQ_Example-Info.plist"; sourceTree = "<group>"; };
+		F5D6AE7E77D227E217A1DDF49FA7AA85 /* StatusIQComponentTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQComponentTableViewCell.swift; sourceTree = "<group>"; };
+		F89FFD3F2AF00C24F3834FE5445D5CEE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		FE01A8076051D395CFDEA3164CBEE24C /* StatusIQ-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StatusIQ-prefix.pch"; sourceTree = "<group>"; };
+		FE1283328C6C99D1B8F3D48D870EA504 /* StatusIQHTTPConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusIQHTTPConnection.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		280FF84D4799BADE80F937070F58BB2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34CA93F9E99F00303D84441904716B72 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FE2E318F84E9260F10A439FC297E728 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840399FD33C83E4F38A7E38736848AF2 /* CoreMedia.framework in Frameworks */,
+				0A4B0301C51D3ED63697081AEA0ACB87 /* Foundation.framework in Frameworks */,
+				34E773E472F7ABDD5FF1B11D66FC0192 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B94955FEF37AB11B3709B24E87D3E716 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E63703593CF80ECFFDCF48FFF9896FCC /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1EE005AD58945D603FCDB163C4F1A22F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC0EABD5D2E2EC0826F01D7CA2BFB451 /* StatusIQ */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		298903127FAA01AD9CAD698D30DD5577 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				03A9A7A1E61CF862BFAEDEAD20BB2EBD /* icons.xcassets */,
+				8133F7C72C3E9F0B602DA026D08B305C /* StatusIQInfo.plist */,
+				5F44214A18E82EAB7ECE051B360535D0 /* StatusIQStoryboard.storyboard */,
+			);
+			name = Resource;
+			path = native/StatusIQFramework/Resource;
+			sourceTree = "<group>";
+		};
+		3C21EC2B7D8C44C289E734B70DFC6325 /* IncidentHistory */ = {
+			isa = PBXGroup;
+			children = (
+				002163A7378FB0BAC711DC6A661A06D2 /* StatusIQIncidentDetailView.swift */,
+				19AC5BF47CF7C0C9B14DC0B78CF5B239 /* StatusIQIncidentDetailView.xib */,
+				71C7B2A6A4E600E6BE0A88B8C1D6961C /* StatusIQIncidentHistoryOverallDetailCell.swift */,
+				B96DBFF06D6E07E36DFD784D9E239712 /* StatusIQIncidentHistoryViewController.swift */,
+				A2AA130ACB5BC57705BD87268ACF5436 /* StatusIQSingleIncidentInfoView.swift */,
+				45BA773894324AF6F1017BA5875C6BC1 /* StatusIQSingleIncidentInfoView.xib */,
+			);
+			path = IncidentHistory;
+			sourceTree = "<group>";
+		};
+		41811829C79BCCB387620B41A170516E /* StatusIQUtils */ = {
+			isa = PBXGroup;
+			children = (
+				7FD76EF1E323010FEC0F31BD8B23D098 /* StatusIQCommonUtil.swift */,
+				10D6272151A4EDB04255292C3458BD51 /* StatusIQcustomization.swift */,
+				9D3EC2B0ACD87F3D2D980E338A0367AE /* StatusIQThemeManager.swift */,
+				3442AA0AECFECE057BA14AE5AF3C6F66 /* StatusIQUIExtension.swift */,
+			);
+			path = StatusIQUtils;
+			sourceTree = "<group>";
+		};
+		499D7EEDBADDACB9FEBB6E5908404C8C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3AEA2AEEDCFCD8346F59255FCAD85EA1 /* StatusIQ.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		55411AB5A09CFAB976B1DCD4E5293E76 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D4881720F1BEDBBE33DE2DB168B6AF9 /* ResourceBundle-StatusIQBundle-StatusIQ-Info.plist */,
+				A7FD6171C054D80DABC2EEA9640D1BBE /* StatusIQ.modulemap */,
+				987088A3B18FCEFB348829C5F85B9C1A /* StatusIQ-dummy.m */,
+				CD98AFFB9E9ACD85286CF0EB89859D7B /* StatusIQ-Info.plist */,
+				FE01A8076051D395CFDEA3164CBEE24C /* StatusIQ-prefix.pch */,
+				6842711201C683E0E980B02498D9CF6D /* StatusIQ-umbrella.h */,
+				197F98E101872DF3E6AFDABDE4FCBE81 /* StatusIQ.debug.xcconfig */,
+				DDF70F4FEDA7F6F09F465AA0474416AA /* StatusIQ.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "native/Example/Pods/Target Support Files/StatusIQ";
+			sourceTree = "<group>";
+		};
+		787B08160994BBA3B8ABDAB57497CF46 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6A4F072FD3CBB1A1106A2A633FC5540 /* Pods-StatusIQ_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B0D9AEB3CF7247E4EFF30733A2DAD7C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01F055D9A82256C5DB0D1BD43A02E0A8 /* Pods_StatusIQ_Example.framework */,
+				B5261FE29A1324DC90A8C85346008FF6 /* StatusIQ.framework */,
+				04E5B997C1FACD9929F3AF6DAC6B3F5C /* StatusIQBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6A9D3CF968CB8715A6084227D611898 /* StatusIQComponentAlone */ = {
+			isa = PBXGroup;
+			children = (
+				5748A4E339454E6D8D6BD4287B3B7F21 /* ComponentHistoryTableViewCell.swift */,
+				639A059C754E0D6D86464A220874257B /* ComponentNameTableViewCell.swift */,
+				451069F913A43E54C367EFCA8B8621BD /* DateAndStatusView.swift */,
+				B76E92B03F984717AC6A3E40C576D066 /* DateAndStatusView.xib */,
+				68F52A3AF938B6937CF0C6B767531C2E /* StatusInfoTableViewCell.swift */,
+				702587865CD52B844629286D8BC8C530 /* StatusIQViewController.swift */,
+			);
+			path = StatusIQComponentAlone;
+			sourceTree = "<group>";
+		};
+		BC0EABD5D2E2EC0826F01D7CA2BFB451 /* StatusIQ */ = {
+			isa = PBXGroup;
+			children = (
+				07743F72F8F47055FC06E998666C64DF /* StatusIQServiceStatus.swift */,
+				499D7EEDBADDACB9FEBB6E5908404C8C /* Pod */,
+				298903127FAA01AD9CAD698D30DD5577 /* Resource */,
+				C73995DC55B94C4384619BA224FA160E /* Source */,
+				55411AB5A09CFAB976B1DCD4E5293E76 /* Support Files */,
+			);
+			name = StatusIQ;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		C6A4F072FD3CBB1A1106A2A633FC5540 /* Pods-StatusIQ_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6F3094BC01335CAAA6BBD9A36C7AB705 /* Pods-StatusIQ_Example.modulemap */,
+				35F1BF38220EC7AD4AB885ECF3A2C7B5 /* Pods-StatusIQ_Example-acknowledgements.markdown */,
+				B5F2034E768DAB57DA6068BE805CC8D9 /* Pods-StatusIQ_Example-acknowledgements.plist */,
+				447F4DB6F5EBB401FFEC8F01E0B42C4D /* Pods-StatusIQ_Example-dummy.m */,
+				6E7355B163A39BCD61CE3356D763881C /* Pods-StatusIQ_Example-frameworks.sh */,
+				F013EBFB258C688D028A4BA6C4334AE5 /* Pods-StatusIQ_Example-Info.plist */,
+				0EE2F2D07945DD05D536DE62AB3F6BBB /* Pods-StatusIQ_Example-umbrella.h */,
+				7BAC6451D0E905EA893CD364278BD017 /* Pods-StatusIQ_Example.debug.xcconfig */,
+				11BD2E7DC2A327884C9627B2BC2A034D /* Pods-StatusIQ_Example.release.xcconfig */,
+			);
+			name = "Pods-StatusIQ_Example";
+			path = "Target Support Files/Pods-StatusIQ_Example";
+			sourceTree = "<group>";
+		};
+		C73995DC55B94C4384619BA224FA160E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EF6F08BAA187B6987D2260B50CC4924E /* ComponentSummary */,
+				3C21EC2B7D8C44C289E734B70DFC6325 /* IncidentHistory */,
+				B6A9D3CF968CB8715A6084227D611898 /* StatusIQComponentAlone */,
+				C9945A9F7216506125BC99E48ED3F43E /* StatusIQHandler */,
+				41811829C79BCCB387620B41A170516E /* StatusIQUtils */,
+			);
+			name = Source;
+			path = native/StatusIQFramework/Source;
+			sourceTree = "<group>";
+		};
+		C9945A9F7216506125BC99E48ED3F43E /* StatusIQHandler */ = {
+			isa = PBXGroup;
+			children = (
+				1ED04917B7B7868662EF611FF61E5E35 /* StatusIQActiveIncidentDetails.swift */,
+				AE9F48EC1B41DB17202EECC41C98BDD2 /* StatusIQAdapter.swift */,
+				8C71AFBEF26A7EC08E2E46A8FEA35970 /* StatusIQBuilder.swift */,
+				C00484FC31DC5515A134330CB47417C1 /* StatusIQComponentData.swift */,
+				B6013018C0B0C6EB74539229D7BD54BB /* StatusIQCurrentStatus.swift */,
+				FE1283328C6C99D1B8F3D48D870EA504 /* StatusIQHTTPConnection.swift */,
+				798B86828FE04AFD33D265F4F872A33B /* StatusIQResolvedIncidentDetails.swift */,
+			);
+			path = StatusIQHandler;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1EE005AD58945D603FCDB163C4F1A22F /* Development Pods */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				B0D9AEB3CF7247E4EFF30733A2DAD7C8 /* Products */,
+				787B08160994BBA3B8ABDAB57497CF46 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E63703593CF80ECFFDCF48FFF9896FCC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F89FFD3F2AF00C24F3834FE5445D5CEE /* CoreMedia.framework */,
+				5558D0A2D6EEBB3A003A9CA16A60472A /* Foundation.framework */,
+				DD0EF2003F3A0C760BCB4BB2EE03BC11 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EF6F08BAA187B6987D2260B50CC4924E /* ComponentSummary */ = {
+			isa = PBXGroup;
+			children = (
+				18267D96A76DFFCD04E2F65A3A349B3D /* StatusIQActiveIncidentTableViewCell.swift */,
+				F5D6AE7E77D227E217A1DDF49FA7AA85 /* StatusIQComponentTableViewCell.swift */,
+				2894EEB99478ABE1675297CC9641FACD /* StatusIQPageViewController.swift */,
+			);
+			path = ComponentSummary;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		71B8AD0112DF8C1EBC9351239558C00E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B428CD1161A585C73FEB973EA68C8D97 /* StatusIQ-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA182284194F5AE19C0FCD40BBA966C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA57EADDCB82051B1947ADB74089894 /* Pods-StatusIQ_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		202FF75CE2AAB61480BA8D3192467CDF /* StatusIQ-StatusIQBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0390441AAD8E3ABFC1C87A4D6EE10B44 /* Build configuration list for PBXNativeTarget "StatusIQ-StatusIQBundle" */;
+			buildPhases = (
+				0F35C4E9777718CF918717D9EAB0BDB0 /* Sources */,
+				B94955FEF37AB11B3709B24E87D3E716 /* Frameworks */,
+				E7D524C19A6D919FFF1998A261F249B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StatusIQ-StatusIQBundle";
+			productName = StatusIQBundle;
+			productReference = 04E5B997C1FACD9929F3AF6DAC6B3F5C /* StatusIQBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		3B3BE61150AF52CF8F5C2FF112366BAB /* Pods-StatusIQ_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 005CC93D953AF2D662A676E21DD12BBB /* Build configuration list for PBXNativeTarget "Pods-StatusIQ_Example" */;
+			buildPhases = (
+				9AA182284194F5AE19C0FCD40BBA966C /* Headers */,
+				3903A5CF8B9CA6C584DDEE44851131D4 /* Sources */,
+				280FF84D4799BADE80F937070F58BB2C /* Frameworks */,
+				E6A8546D08FA486200B227AA5949CB9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDFAA021E5D17DD8C5BC1EB1C380E9DF /* PBXTargetDependency */,
+			);
+			name = "Pods-StatusIQ_Example";
+			productName = Pods_StatusIQ_Example;
+			productReference = 01F055D9A82256C5DB0D1BD43A02E0A8 /* Pods_StatusIQ_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B91040CE13C58946E273B50EF1C1319B /* StatusIQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EA727635B361DACB448122640AADB01 /* Build configuration list for PBXNativeTarget "StatusIQ" */;
+			buildPhases = (
+				71B8AD0112DF8C1EBC9351239558C00E /* Headers */,
+				1A112500AAFBDBC33BDCCDAB63CCEF86 /* Sources */,
+				4FE2E318F84E9260F10A439FC297E728 /* Frameworks */,
+				7665A1B13CAC29865B7573A9A26B60BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCC604B50BB39434FC0325146D43AA7B /* PBXTargetDependency */,
+			);
+			name = StatusIQ;
+			productName = StatusIQ;
+			productReference = B5261FE29A1324DC90A8C85346008FF6 /* StatusIQ.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B0D9AEB3CF7247E4EFF30733A2DAD7C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B3BE61150AF52CF8F5C2FF112366BAB /* Pods-StatusIQ_Example */,
+				B91040CE13C58946E273B50EF1C1319B /* StatusIQ */,
+				202FF75CE2AAB61480BA8D3192467CDF /* StatusIQ-StatusIQBundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7665A1B13CAC29865B7573A9A26B60BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60F1D68F3AFC466991415C816431B6B /* DateAndStatusView.xib in Resources */,
+				140E4BD7E464BB91BC7572C91EC8ABB0 /* icons.xcassets in Resources */,
+				57932B07E644460AE44A56A917767715 /* StatusIQBundle.bundle in Resources */,
+				942297F910855AC9361597E08A141CB9 /* StatusIQIncidentDetailView.xib in Resources */,
+				C6A9205197CDEFC0822B83AE7EB9B3D7 /* StatusIQInfo.plist in Resources */,
+				4FDDEABCFE5B807C2A5CB8E983B6295A /* StatusIQSingleIncidentInfoView.xib in Resources */,
+				3791FF3A5AA4636D1577989DC61A46FB /* StatusIQStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6A8546D08FA486200B227AA5949CB9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7D524C19A6D919FFF1998A261F249B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCFCF0CADF0FBB9165C43514167EBD4D /* DateAndStatusView.xib in Resources */,
+				AC32A5F00930372B07A2BA2298C16ACF /* icons.xcassets in Resources */,
+				ECB9F14F81B48BAB91BFBF2FB6DFCB6F /* StatusIQIncidentDetailView.xib in Resources */,
+				138E249502759F3C7BC76732D9293F76 /* StatusIQInfo.plist in Resources */,
+				F3CE77566A730125460EC6040958934B /* StatusIQSingleIncidentInfoView.xib in Resources */,
+				B60837367158511F5DDD0EC56EADA960 /* StatusIQStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F35C4E9777718CF918717D9EAB0BDB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A112500AAFBDBC33BDCCDAB63CCEF86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F3EE7D3A05505DEFA65162DA1063E8 /* ComponentHistoryTableViewCell.swift in Sources */,
+				254C95812D22BEB23F00D0ACBEDC5025 /* ComponentNameTableViewCell.swift in Sources */,
+				F98B34BE0E569C85CCD40D28A787786C /* DateAndStatusView.swift in Sources */,
+				13CA7A75126ED9F3A40EA87D511CC0C4 /* StatusInfoTableViewCell.swift in Sources */,
+				147082A8DBFF229FB044B5A302E41A20 /* StatusIQ-dummy.m in Sources */,
+				837BE1E183B6E8D79EA32EBF2350E000 /* StatusIQActiveIncidentDetails.swift in Sources */,
+				A9A95B6873BE52D037C9206DB1409A43 /* StatusIQActiveIncidentTableViewCell.swift in Sources */,
+				14B7CA7FC82093DBF32ECB96C794D24E /* StatusIQAdapter.swift in Sources */,
+				36C9C783AA5D3C643A3B06BCCA689943 /* StatusIQBuilder.swift in Sources */,
+				64B0FD370CEA9C29B5E7755B2B671A36 /* StatusIQCommonUtil.swift in Sources */,
+				68EA0C910EF4D98BEC7C113F2D6A2729 /* StatusIQComponentData.swift in Sources */,
+				43F5EA03B747537F7979BAC86C416AFA /* StatusIQComponentTableViewCell.swift in Sources */,
+				D4268AEF943ED87F7E4D5AA53C13996B /* StatusIQCurrentStatus.swift in Sources */,
+				AB865CD898E40926947854A38771AC78 /* StatusIQcustomization.swift in Sources */,
+				4C6B1237ABEC2A3EE510EBD68FE57746 /* StatusIQHTTPConnection.swift in Sources */,
+				6534C789EFA1547A4B5EE7B5F86842A6 /* StatusIQIncidentDetailView.swift in Sources */,
+				0F8E217E5CBCF5022B031C5319E68D21 /* StatusIQIncidentHistoryOverallDetailCell.swift in Sources */,
+				9C831CBD16B2A84B9C1069B29B6B3A1A /* StatusIQIncidentHistoryViewController.swift in Sources */,
+				770C771A36FB269A4E94A6500BC9CFD6 /* StatusIQPageViewController.swift in Sources */,
+				73303B955266749D2B68A70345782C5A /* StatusIQResolvedIncidentDetails.swift in Sources */,
+				0996B2D64830A39C556E98A6A3F97FC9 /* StatusIQServiceStatus.swift in Sources */,
+				7BAB8BAD7DF45FC3D6AF8B5E1E92FFC9 /* StatusIQSingleIncidentInfoView.swift in Sources */,
+				D61EAC9437A1FC3CDDE83C304CB398C5 /* StatusIQThemeManager.swift in Sources */,
+				70EF1DE0A52A2F9299833BA196EDE2A5 /* StatusIQUIExtension.swift in Sources */,
+				3EC65CC5D020F4B2FF6364CFDD1D2F16 /* StatusIQViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3903A5CF8B9CA6C584DDEE44851131D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD6C178F9C7C9B59711AD0F5F7E14EA3 /* Pods-StatusIQ_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDFAA021E5D17DD8C5BC1EB1C380E9DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StatusIQ;
+			target = B91040CE13C58946E273B50EF1C1319B /* StatusIQ */;
+			targetProxy = 094B5E0A138221859EDC85A249692558 /* PBXContainerItemProxy */;
+		};
+		FCC604B50BB39434FC0325146D43AA7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "StatusIQ-StatusIQBundle";
+			target = 202FF75CE2AAB61480BA8D3192467CDF /* StatusIQ-StatusIQBundle */;
+			targetProxy = 75F829CE41C607916720B42E0C5B017D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2DC546298A5A3B483BA005BDF43A6C89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BAC6451D0E905EA893CD364278BD017 /* Pods-StatusIQ_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StatusIQ_Example/Pods-StatusIQ_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StatusIQ_Example/Pods-StatusIQ_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3C92177AF7944A438B704723E3D4817B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 197F98E101872DF3E6AFDABDE4FCBE81 /* StatusIQ.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StatusIQ/StatusIQ-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StatusIQ/StatusIQ-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/StatusIQ/StatusIQ.modulemap";
+				PRODUCT_MODULE_NAME = StatusIQ;
+				PRODUCT_NAME = StatusIQ;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4388296A5675665EC2D89D5DA0106D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDF70F4FEDA7F6F09F465AA0474416AA /* StatusIQ.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/StatusIQ";
+				IBSC_MODULE = StatusIQ;
+				INFOPLIST_FILE = "Target Support Files/StatusIQ/ResourceBundle-StatusIQBundle-StatusIQ-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = StatusIQBundle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9E9D61009DE02F9B6A4237E7629BFC35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11BD2E7DC2A327884C9627B2BC2A034D /* Pods-StatusIQ_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StatusIQ_Example/Pods-StatusIQ_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StatusIQ_Example/Pods-StatusIQ_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E63B86C48AFABA3FEFD5D168EB752277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 197F98E101872DF3E6AFDABDE4FCBE81 /* StatusIQ.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/StatusIQ";
+				IBSC_MODULE = StatusIQ;
+				INFOPLIST_FILE = "Target Support Files/StatusIQ/ResourceBundle-StatusIQBundle-StatusIQ-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = StatusIQBundle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F3AA34F16E1393B43B7F8454025717F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDF70F4FEDA7F6F09F465AA0474416AA /* StatusIQ.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StatusIQ/StatusIQ-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StatusIQ/StatusIQ-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/StatusIQ/StatusIQ.modulemap";
+				PRODUCT_MODULE_NAME = StatusIQ;
+				PRODUCT_NAME = StatusIQ;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		005CC93D953AF2D662A676E21DD12BBB /* Build configuration list for PBXNativeTarget "Pods-StatusIQ_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DC546298A5A3B483BA005BDF43A6C89 /* Debug */,
+				9E9D61009DE02F9B6A4237E7629BFC35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0390441AAD8E3ABFC1C87A4D6EE10B44 /* Build configuration list for PBXNativeTarget "StatusIQ-StatusIQBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E63B86C48AFABA3FEFD5D168EB752277 /* Debug */,
+				4388296A5675665EC2D89D5DA0106D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EA727635B361DACB448122640AADB01 /* Build configuration list for PBXNativeTarget "StatusIQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C92177AF7944A438B704723E3D4817B /* Debug */,
+				F3AA34F16E1393B43B7F8454025717F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -26,17 +26,20 @@ public class StatusIQServiceStatus: NSObject {
     static var unwrappedStatusPageUrl =  ""
     static var unwrappedIsComponentStatusAlone =  false
     static var unwrappedComponentName =  ""
+    static var unwrappedTheme : UIUserInterfaceStyle = .dark
     
     public static func sdkInit() -> UIViewController { //Via info.plist
         self.initializeVariables(isFromInfoList: true)
         return self.getStatusStoryboard()
     }
     
-    public static func sdkInit(withStatusPageUrl url: String, isComponentStatusAlone: Bool = false, withComponentName componentName: String = "" ) -> UIViewController { //Via method
+    public static func sdkInit(withStatusPageUrl url: String, isComponentStatusAlone: Bool = false, withComponentName componentName: String = "", withTheme theme: UIUserInterfaceStyle = .light) -> UIViewController { //Via method
         self.unwrappedStatusPageUrl = url
         self.unwrappedIsComponentStatusAlone = isComponentStatusAlone
         self.unwrappedComponentName = componentName
         
+        self.unwrappedTheme = theme
+
         self.initializeVariables(isFromInfoList: false)
         return self.getStatusStoryboard()
     }
@@ -49,7 +52,12 @@ public class StatusIQServiceStatus: NSObject {
             mainVC = storyboard.instantiateViewController(withIdentifier: "StatusIQIdentifier")
         }else {
             mainVC = storyboard.instantiateViewController(withIdentifier: "StatusIQPageIdentifier")
+
+//            if let statusIQPageVC = storyboard.instantiateViewController(withIdentifier: "StatusIQPageIdentifier") as? StatusIQPageViewController {
+//                mainVC = statusIQPageVC
+//            }
         }
+        mainVC.overrideUserInterfaceStyle = self.unwrappedTheme
         mainVC.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
         return mainVC
     }
@@ -67,6 +75,9 @@ public class StatusIQServiceStatus: NSObject {
                         }
                         if let unwrappedcomponentName = dictionary["Component Name"] as? String {
                             self.componentName = unwrappedcomponentName
+                        }
+                        if let unwrappedTheme = dictionary["Theme"] as? Int {
+                            self.unwrappedTheme = UIUserInterfaceStyle(rawValue: unwrappedTheme) ?? .light
                         }
                     }
                 }
