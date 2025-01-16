@@ -1,8 +1,8 @@
-platform :ios, '10.0'
+platform :ios, '14.0'
 
 use_frameworks!
 
 target 'StatusIQ_Example' do
- pod "StatusIQ", :git => 'https://github.com/site24x7/StatusIQ-iOS-SDK.git'
+	pod 'StatusIQ','2.5', :source=>'https://github.com/site24x7/StatusIQ-iOS-SDK.git'
 end
 
