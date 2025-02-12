@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   SOFTWARE
   LICENSE
 }
-  s.author       = { "nandhini guru" => "nandhini.guru@zohocorp.com" ,"Muralikrishnan" => "muralikrishnan@zohocorp.com"}
+  s.author = { "Site24x7" => "support@site24x7.com" }
   s.ios.deployment_target = '14.0'
   s.swift_version = '4.0'
 

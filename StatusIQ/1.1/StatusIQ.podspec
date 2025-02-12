@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
 }
   #support email-id -  support@site24x7.com
-  s.author       = { "nandhini guru" => "nandhini.guru@zohocorp.com" ,"Muralikrishnan" => "muralikrishnan@zohocorp.com"}
+  s.author = { "Site24x7" => "support@site24x7.com" }
   s.ios.deployment_target = '10.0'
 
   s.frameworks = 'UIKit','Foundation', 'CoreMedia'
